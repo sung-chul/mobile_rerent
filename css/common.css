@@ -211,6 +211,64 @@ button {outline:0;vertical-align:top;}
 }
 
 .content {padding:0 15px 30px;}
+
+/* 푸터 */
+.footer {
+	border-top:1px solid #d6d6d6;
+	background-color:#f6f6f6;
+}
+.footer .foot-text {
+	padding:10px 0;
+	border-top:1px solid #d6d6d6;
+	color:#a2a2a2;
+	font-family:'noto';
+	font-size:10px;
+	text-align:center;
+	line-height:15px;
+}
+.footer .foot-call {
+	padding:10px 0   ;
+	border-top:1px solid #d6d6d6;
+	text-align:center;
+	font-size:0;
+	line-height:0;
+}
+.footer .foot-call .call-item {
+	display:inline-block;
+	position:relative;
+	padding:0 10px 0 11px;
+}
+.footer .foot-call .call-item:before {
+	content:'';
+	position:absolute;
+	left:0;top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:1px;
+	height:12px;
+	background-color:#c9c9c9;
+}
+.footer .foot-call .call-item:first-child:before {display:none;}
+.footer .foot-call .call-item .title {
+	font-family:'noto';
+	font-size:11px;
+	line-height:23px;
+	line-height:23px;
+}
+.footer .foot-call .call-item .btn-call {
+	display:inline-block;
+	width:70px;
+	height:23px;
+	margin-left:9px;
+	box-sizing:border-box;
+	border:1px solid #d6d6d6;
+	color:#666;
+	font-size:11px;
+	line-height:21px;
+}
+.footer .foot-call {}
+.footer .foot-call {}
 /* ============================================================================================
 	공통
 ============================================================================================ */
@@ -410,7 +468,6 @@ button {outline:0;vertical-align:top;}
 	background-size:21px 19px;
 	color:#3b1e1e;
 }
-
 
 /* 버튼 정렬 */
 .btn-wrap {margin-top:30px;}
