@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
+<title>Layout</title>
+<link rel="stylesheet" href="../css/common.css">
+<style>
+	.content {
+		padding:30px 15px;
+	}
+	h1 {
+		height:40px;
+		margin-top:30px;
+		padding-left:16px;
+		background-color:#999;
+		color:#fff;
+		font-size:17px;
+		line-height:40px;
+	}
+	h1:first-child {margin-top:0;}
+	h2 {
+		margin:20px 0 10px;
+		font-size:14px;
+		font-weight:bold;
+	}
+	.cTitle01 {margin:0;}
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="container">
+		<div class="content">
+			<h1>checkbox / radio</h1>
+			<h2>checkbox</h2>
+			<input type="checkbox" class="styled1">
+			<input type="checkbox" class="styled1" checked>
+			<input type="checkbox" class="styled1" disabled>
+			<br><br>
+			<label class="check-label"><input type="checkbox" class="styled1">라벨이 감싼경우</label>
+			<br><br>
+			<div class="chk-list">
+				<label class="check-label"><input type="checkbox" class="styled1">개인</label>
+				<label class="check-label"><input type="checkbox" class="styled1">개인사업자</label>
+				<label class="check-label"><input type="checkbox" class="styled1">법인사업자</label>
+			</div>
+
+			<h2>radio</h2>
+			<input type="radio" class="styled1">
+			<input type="radio" class="styled1" checked>
+			<input type="radio" class="styled1" disabled>
+
+			<br><br>
+			<label class="radio-label"><input type="radio" class="styled1">라벨이 감싼경우</label>
+			<br><br>
+			<div class="radio-list">
+				<label class="radio-label"><input type="radio" class="styled1" checked>개인</label>
+				<label class="radio-label"><input type="radio" class="styled1">개인사업자</label>
+				<label class="radio-label"><input type="radio" class="styled1">법인사업자</label>
+			</div>
+
+			<h1>셀렉트박스</h1>
+			<br>
+			<select class="styled1">
+				<option>option 01</option>
+				<option>option 02</option>
+				<option>option 03</option>
+			</select>
+
+			<h2>리스트 형식</h2>
+			<ul class="select-list1">
+				<li class="item">
+					<select class="styled1">
+						<option>2017</option>
+						<option>2016</option>
+						<option>2015</option>
+					</select>
+				</li>
+				<li class="item">
+					<select class="styled1">
+						<option>4월</option>
+						<option>2월</option>
+						<option>3월</option>
+					</select>
+				</li>
+			</ul>
+			<br><br>
+			<ul class="select-list2">
+				<li class="item">
+					<select class="styled1">
+						<option>2017</option>
+						<option>2016</option>
+						<option>2015</option>
+					</select>
+				</li>
+				<li class="item">
+					<select class="styled1">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+					</select>
+				</li>
+				<li class="item">
+					<select class="styled1">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+					</select>
+				</li>
+			</ul>
+			<br><br>
+			<ul class="select-list3">
+				<li class="item">
+					<select class="styled1">
+						<option>2017</option>
+						<option>2016</option>
+						<option>2015</option>
+					</select>
+					<span class="label-txt">년</span>
+				</li>
+				<li class="item">
+					<select class="styled1">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+					</select>
+					<span class="label-txt">월</span>
+				</li>
+				<li class="item">
+					<select class="styled1">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+					</select>
+					<span class="label-txt">일</span>
+				</li>
+			</ul>
+
+			<h1>입력폼</h1>
+			<br>
+			<div class="form-list1">
+				<div class="form-item">
+					<h3 class="inp-title"><label for="name">이름<em>*</em></label></h3>
+					<input type="text" id="name" placeholder="이름">
+				</div>
+				<div class="form-item">
+					<h3 class="inp-title"><label for="id">아이디(이메일)<em>*</em></label></h3>
+					<input type="text" id="id" placeholder="아이디">
+					<p class="msg-text">사용 가능한 아이디입니다.</p>
+				</div>
+				<div class="form-item">
+					<h3 class="inp-title"><label for="pw">비밀번호<em>*</em></label></h3>
+					<input type="password" id="pw" placeholder="영문,숫자,특수문자 조합으로 8~20자">
+					<p class="msg-text fColor01">비밀번호가 일치하지 않습니다.</p>
+				</div>
+				<div class="form-item">
+					<h3 class="inp-title"><label for="pw">휴대폰 인증<em>*</em></label></h3>
+					<div class="form-button-type1">
+						<input type="tel" placeholder="휴대폰 번호 ('-' 없이 입력하세요)" class="text">
+						<button type="button" class="btn-text btn-h45 btn-text-gray2 btn">인증번호발송</button>
+					</div>
+					<div class="form-button-type1">
+						<input type="tel" class="text">
+						<button type="button" class="btn-text btn-h45 btn-text-gray2 btn">인증확인</button>
+					</div>
+				</div>
+				<div class="form-item">
+					<h3 class="inp-title">이메일 수신 동의</h3>
+					<div class="email-agree">
+						<p class="text">ReRent에서 발송하는 뉴스레터, 광고메일, 이벤트 소식을 받으시겠습니까?<p>
+						<p class="notice-text">(회사정책 관련 내용은 수신동의 여부와 관계없이 발송됩니다.)</p>
+					</div>
+					<div class="radio-list mgT10">
+						<label class="radio-label"><input type="radio" class="styled1" checked>동의</label>
+						<label class="radio-label"><input type="radio" class="styled1">비동의</label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+</body>
+</html>
