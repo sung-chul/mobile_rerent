@@ -434,10 +434,10 @@ button {outline:0;vertical-align:top;}
 .social-login li:first-child {
 	margin-top:0;
 }
-.social-login button {
+.social-login li button {
 	position: relative;
 }
-.social-login button:before {
+.social-login li button:before {
 	content: '';
 	position: absolute;
 	top:0; left:51px; bottom:0;
@@ -445,7 +445,7 @@ button {outline:0;vertical-align:top;}
 	background-color:#000;
 	opacity: 0.15;
 }
-.social-login button:after {
+.social-login li button:after {
 	content: '';
 	position: absolute;
 	top:0; left:52px; bottom:0;
