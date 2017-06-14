@@ -1106,3 +1106,56 @@ select.styled1:disabled {
 	color:#b7b7b7;
 	line-height:15px;
 }
+/* 공지사항 */
+.notice-list {}
+.notice-list .item-notice {
+	position:relative;
+	padding:10px 39px 10px 15px;
+	border-bottom:1px solid #e5e5e5;
+}
+.notice-list .item-notice.notice {
+	padding-left:49px;
+}
+.notice-list .item-notice:before {
+	content:'';
+	display:block;
+	position:absolute;
+	right:15px; top:50%;
+	width:8px;
+	height:13px;
+	margin-top:-6.5px;
+	background:url(../img/icon/ico_more.gif) no-repeat 0 0;
+	background-size:8px 13px;
+}
+.notice-list .item-notice.notice .ico-notice {
+	display:block;
+	position:absolute;
+	left:15px; top:10px;
+	width:26px;
+	height:16px;
+	background-color:#f58025;
+	font-size:11px;
+	color:#fff;
+	line-height:14px;
+	font-weight:bold;
+	text-align:center;
+}
+.notice-list .item-notice .text {
+	overflow:hidden;
+	width:100%;
+	font-size:14px;
+	color:#333;
+	line-height:17px;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.notice-list .item-notice .date-text {
+	display:block;
+	margin-top:3px;
+	font-size:13px;
+	color:#999;
+	line-height:15px;
+}
+/* FAQ */
+.tab-cont {display:none;}
+.tab-cont.on {display:block;}
