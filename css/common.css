@@ -474,6 +474,14 @@ button {outline:0;vertical-align:top;}
 
 /* 버튼 정렬 */
 .btn-wrap {margin-top:30px;}
+
+.btn-wrap.single {
+	text-align: center;
+}
+.btn-wrap.single .btn-text {
+	width: 50%;
+}
+
 .btn-list1 {
 	overflow:hidden;
 	margin:0 -2px;
