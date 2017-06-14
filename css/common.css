@@ -90,7 +90,7 @@ blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
 input,select,textarea,button {vertical-align:middle;outline:0;}
 button {border:0 none;background-color:transparent;cursor:pointer}
 body,th,td,input,select,textarea,button,select {font-family:'MalgunGothic';font-size:13px;line-height:1.3;color:#666;letter-spacing:-0.4px;}
-body {overflow-x:hidden;width:100%;-webkit-user-select:none; background-color:#f6f6f6;}
+body {overflow-x:hidden;width:100%;-webkit-user-select:none;}
 input[type=text],
 input[type=tel],
 input[type=number],
@@ -430,6 +430,7 @@ button {outline:0;vertical-align:top;}
 
 .social-login {
 	overflow: hidden;
+	margin-top:20px;
 	border:1px solid #ddd;
 }
 .social-login li {
@@ -753,7 +754,7 @@ select.styled1:disabled {
 	LO - 로그인단
 ============================================================================================ */
 .login-find {
-	margin-top:12px;
+	margin-top:15px;
 	text-align: center;
 }
 .login-find span {
@@ -779,4 +780,33 @@ select.styled1:disabled {
 }
 .login-find span:first-child:before {
 	display: none;
+}
+
+.login-global .join-link {
+	overflow: hidden;
+	margin-top:30px;
+}
+.login-global .join-link .text {
+	color:#333;
+	font-size:14px;
+	letter-spacing: -1px;
+	line-height: 45px;
+	vertical-align: top;
+}
+.login-global .join-link .link {
+	float: right;
+	width:85px;
+}
+.login-form .search-result .notice-text {
+	color:#333;
+	font-size:15px;
+	text-align: center;
+	line-height: 20px;
+}
+.login-form .search-result .result-text {
+	margin-top:25px;
+	color:#333;
+	font-size:17px;
+	text-align: center;
+	line-height: 22px;
 }
