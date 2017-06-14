@@ -126,9 +126,9 @@ input[type=text]:disabled,
 input[type=tel]:disabled,
 input[type=number]:disabled,
 input[type=password]:disabled {
-	background-color:#d9d9d9;
-	color:#999;
-	border-color:#ccc;
+	background-color:#eee;
+	color:#aaa;
+	border-color:#bbb;
 	opacity:1;
 }
 input[type=submit] {-webkit-border-radius:0;border:0;border-radius:0;-webkit-appearance:none;}
@@ -136,11 +136,12 @@ textarea {
 	width:100%;
 	padding:8px 10px;
 	border:1px solid #ccc;
+	border-radius:3px;
 	background-color:#fff;
 	box-sizing:border-box;
-	color:#999;
-	font-size:14px;
-	line-height:20px ;
+	color:#444;
+	font-size:15px;
+	line-height:17px ;
 	-webkit-appearance:none;-moz-appearance:none;appearance:none;
 	word-break:keep-all;
 	word-wrap:break-word;
@@ -629,7 +630,7 @@ input[type=radio]:disabled.styled1:before {background-position:-42px -21px;}
 	height:20px;
 	color:#666;
 	font-size:14px;
-	line-height:18px;
+	line-height:20px;
 }
 .radio-label input[type=radio] {margin-right:6px;}
 
@@ -638,17 +639,6 @@ input[type=radio]:disabled.styled1:before {background-position:-42px -21px;}
 }
 .radio-list .radio-label:first-child {
 	margin-left:0;
-}
-
-.radio-list2 li {
-	margin-top:10px;
-}
-.radio-list2 li:first-child {
-	margin-top:0;
-}
-.radio-list2 li .etc-textarea {
-	margin-top:10px;
-	height: 100px;
 }
 
 /* 셀렉트박스 */
@@ -740,18 +730,6 @@ select.styled1:disabled {
 }
 .login-form .form-item {
 	margin-bottom:10px;
-}
-.login-form .form-item .inp-title {
-	margin-bottom:5px;
-}
-.login-form .form-item .inp-title {
-	color:#666;
-	font-size:14px;
-	line-height: 19px;
-}
-.login-form .form-item .inp-title em {
-	margin-left:4px;
-	color:#e9002d;
 }
 
 /* 폼리스트 01 */
@@ -936,37 +914,6 @@ select.styled1:disabled {
 	line-height: 22px;
 }
 
-/* ============================================================================================
-	MY 페이지
-============================================================================================ */
-.sorting-box {
-	position: relative;
-	padding:10px 15px;
-	background-color:#f4f4f4;
-	border-bottom:1px solid #999;
-}
-.sorting-box:after {
-	content: '';
-	display: block;
-	clear: both;
-}
-.sorting-box .label-txt {
-	float: left;
-	margin-right:10px;
-	color:#333;
-	font-size:14px;
-	line-height: 45px;
-}
-.sorting-box .styled1 {
-	width:115px;
-}
-
-.no-result p {
-	color:#999;
-	font-size:15px;
-	text-align: center;
-	line-height:200px;
-}
 /* ============================================================================================
 	이벤트
 ============================================================================================ */
@@ -1159,3 +1106,51 @@ select.styled1:disabled {
 /* FAQ */
 .tab-cont {display:none;}
 .tab-cont.on {display:block;}
+.accordion-list {}
+.accordion-list .item {
+	position:relative;
+}
+.accordion-list .item:before {
+	content:'';
+	display:block;
+	position:absolute;
+	right:0; top:0;
+	width:12px;
+	height:11px;
+	background:url(../img/icon/ico_open_close.png) no-repeat right 0;
+	background-size:12px 12px;
+}
+.accordion-list .item .question {
+	padding:15px 0;
+	border-bottom:1px solid #ddd;
+}
+.accordion-list .item .question .title {
+	position:relative;
+	overflow:hidden;
+	padding:0 30px 0 44px;
+	background-size:12px 12px;
+	font-size:14px;
+	color:#333;
+	line-height:20px;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.accordion-list .item .question .title:before {
+	content:'Q';
+	display:block;
+	position:absolute;
+	left:15px; top:50%;
+	width:20px;
+	height:20px;
+	margin-top:-10px;
+	background-color:#666;
+	border-radius:50%;
+	font-size:11px;
+	color:#fff;
+	line-height:20px;
+	text-align:center;
+}
+.accordion-list .item .answer {display:none;}
+.accordion-list .item .answer .answer-txt {
+
+}
