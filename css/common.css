@@ -90,7 +90,7 @@ blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
 input,select,textarea,button {vertical-align:middle;outline:0;}
 button {border:0 none;background-color:transparent;cursor:pointer}
 body,th,td,input,select,textarea,button,select {font-family:'MalgunGothic';font-size:13px;line-height:1.3;color:#666;letter-spacing:-0.4px;}
-body {overflow-x:hidden;width:100%;-webkit-user-select:none; background-color:#f6f6f6;}
+body {overflow-x:hidden;width:100%;-webkit-user-select:none;}
 input[type=text],
 input[type=tel],
 input[type=number],
@@ -213,6 +213,10 @@ button {outline:0;vertical-align:top;}
 	background-position: 0 -52px;
 }
 .content {padding:0 15px 30px;}
+
+.content.wide-cont {
+	padding:0 0 30px;
+}
 
 /* 푸터 */
 .footer {
@@ -472,6 +476,7 @@ button {outline:0;vertical-align:top;}
 
 .social-login {
 	overflow: hidden;
+	margin-top:20px;
 	border:1px solid #ddd;
 }
 .social-login li {
@@ -516,6 +521,14 @@ button {outline:0;vertical-align:top;}
 
 /* 버튼 정렬 */
 .btn-wrap {margin-top:30px;}
+
+.btn-wrap.single {
+	text-align: center;
+}
+.btn-wrap.single .btn-text {
+	width: 50%;
+}
+
 .btn-list1 {
 	overflow:hidden;
 	margin:0 -2px;
@@ -616,7 +629,7 @@ input[type=radio]:disabled.styled1:before {background-position:-42px -21px;}
 	display:inline-block;
 	height:20px;
 	color:#666;
-	font-size:15px;
+	font-size:14px;
 	line-height:20px;
 }
 .radio-label input[type=radio] {margin-right:6px;}
@@ -694,12 +707,12 @@ select.styled1:disabled {
 .select-list3 .item {
 	position: relative;
 	float:left;
-	width:33%;
+	width:32%;
 	box-sizing:border-box;
 	padding:0 30px 0 2px;
 }
-.select-list3 .item.first-child {
-	width:34%;
+.select-list3 .item:first-child {
+	width:36%;
 }
 .select-list3 .item .label-txt {
 	position: absolute;
@@ -721,6 +734,7 @@ select.styled1:disabled {
 
 /* 폼리스트 01 */
 .form-list1 {
+	margin-bottom:30px;
 	padding:17px 0;
 	border-top:2px solid #e9002d;
 	border-bottom:1px solid #999;
@@ -799,12 +813,51 @@ select.styled1:disabled {
 	text-align:right;
 }
 
+.confirm-area {
+	padding-bottom:129px;
+	background:url(../img/bg/bg_confirm.png) center bottom no-repeat;
+	background-size:216px 112px;
+}
+.confirm-area .text {
+	margin-bottom:10px;
+	color:#333;
+	font-size:20px;
+	line-height: 25px;
+	text-align: center;
+}
+.confirm-area .sub-text {
+	color:#333;
+	font-size:15px;
+	line-height: 20px;
+	text-align: center;
+}
+.confirm-guide {
+	margin-top:30px;
+	color:#333;
+	font-size:15px;
+	line-height: 20px;
+	text-align: center;
+}
+.confirm-guide .text-line {
+	display: inline-block;
+	vertical-align:top;
+}
 
+.text-line {
+	position: relative;
+}
+.text-line:before {
+	content: '';
+	position: absolute;
+	left:0; right:0; bottom:-2px;
+	width:100%; height:1px;
+	background-color:#666;
+}
 /* ============================================================================================
 	LO - 로그인단
 ============================================================================================ */
 .login-find {
-	margin-top:12px;
+	margin-top:15px;
 	text-align: center;
 }
 .login-find span {
@@ -831,6 +884,36 @@ select.styled1:disabled {
 .login-find span:first-child:before {
 	display: none;
 }
+
+.login-global .join-link {
+	overflow: hidden;
+	margin-top:30px;
+}
+.login-global .join-link .text {
+	color:#333;
+	font-size:14px;
+	letter-spacing: -1px;
+	line-height: 45px;
+	vertical-align: top;
+}
+.login-global .join-link .link {
+	float: right;
+	width:85px;
+}
+.login-form .search-result .notice-text {
+	color:#333;
+	font-size:15px;
+	text-align: center;
+	line-height: 20px;
+}
+.login-form .search-result .result-text {
+	margin-top:25px;
+	color:#333;
+	font-size:17px;
+	text-align: center;
+	line-height: 22px;
+}
+
 /* ============================================================================================
 	이벤트
 ============================================================================================ */
