@@ -180,6 +180,7 @@ button {outline:0;vertical-align:top;}
 .wrapper.bg-gray {background-color:#f4f4f4;}
 .header {
 	position: relative;
+	background-color:#fff;
 	border-bottom:1px solid #d5d5d5;
 }
 .header .page-title {
