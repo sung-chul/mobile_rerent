@@ -90,7 +90,7 @@ blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
 input,select,textarea,button {vertical-align:middle;outline:0;}
 button {border:0 none;background-color:transparent;cursor:pointer}
 body,th,td,input,select,textarea,button,select {font-family:'MalgunGothic';font-size:13px;line-height:1.3;color:#666;letter-spacing:-0.4px;}
-body {overflow-x:hidden;width:100%;-webkit-user-select:none}
+body {overflow-x:hidden;width:100%;-webkit-user-select:none; background-color:#f6f6f6;}
 input[type=text],
 input[type=tel],
 input[type=number],
@@ -176,6 +176,8 @@ button {outline:0;vertical-align:top;}
 /* ============================================================================================
 	레이아웃
 ============================================================================================ */
+.wrapper {background-color:#fff;}
+.wrapper.bg-gray {background-color:#f4f4f4;}
 .header {
 	position: relative;
 	border-bottom:1px solid #d5d5d5;
@@ -227,8 +229,7 @@ button {outline:0;vertical-align:top;}
 	line-height:15px;
 }
 .footer .foot-call {
-	padding:10px 0   ;
-	border-top:1px solid #d6d6d6;
+	padding:10px 0;
 	text-align:center;
 	font-size:0;
 	line-height:0;
@@ -267,8 +268,6 @@ button {outline:0;vertical-align:top;}
 	font-size:11px;
 	line-height:21px;
 }
-.footer .foot-call {}
-.footer .foot-call {}
 /* ============================================================================================
 	공통
 ============================================================================================ */
@@ -428,45 +427,48 @@ button {outline:0;vertical-align:top;}
 	color:#fff;
 }
 
+.social-login {
+	overflow: hidden;
+	border:1px solid #ddd;
+}
 .social-login li {
-	margin-top:5px;
+	float: left;
+	width:33%;
+	border-left:1px solid #ddd;
+	box-sizing: border-box;
 }
 .social-login li:first-child {
-	margin-top:0;
+	border-left:0;
+}
+.social-login li:nth-child(2n) {
+	width:34%;
 }
 .social-login li button {
 	position: relative;
+	width:100%; height:100%;
+	padding:60px 0 15px;
+	color:#666;
+	font-size:13px;
+	box-sizing: border-box;
 }
 .social-login li button:before {
 	content: '';
 	position: absolute;
-	top:0; left:51px; bottom:0;
-	width:1px; height:100%;
-	background-color:#000;
-	opacity: 0.15;
+	top:15px; left:50%;
+	width:40px; height:40px;
+	margin-left:-20px;
 }
-.social-login li button:after {
-	content: '';
-	position: absolute;
-	top:0; left:52px; bottom:0;
-	width:1px; height:100%;
-	background-color:#fff;
-	opacity: 0.3;
+.btn-naver:before {
+	background:url(../img/icon/icon_naver.png) 0 0 no-repeat;
+	background-size:40px 40px;
 }
-.btn-naver {
-	background:#00d037 url(../img/icon/icon_naver.png) 17px center no-repeat;
-	background-size:17px 15px;
-	color:#fff;
+.btn-facebook:before {
+	background:url(../img/icon/icon_facebook.png) 0 0 no-repeat;
+	background-size:40px 40px;
 }
-.btn-facebook {
-	background:#3b5999 url(../img/icon/icon_facebook.png) 20px center no-repeat;
-	background-size:10px 21px;
-	color:#fff;
-}
-.btn-cacao {
-	background:#fbe300 url(../img/icon/icon_cacao.png) 15px center no-repeat;
-	background-size:21px 19px;
-	color:#3b1e1e;
+.btn-cacao:before {
+	background:url(../img/icon/icon_cacao.png) 0 0 no-repeat;
+	background-size:40px 40px;
 }
 
 /* 버튼 정렬 */
@@ -666,6 +668,14 @@ select.styled1:disabled {
 	text-align: center;
 }
 
+/* 로그인 폼 */
+.login-form {
+	padding-top:30px;
+}
+.login-form .form-item {
+	margin-bottom:10px;
+}
+
 /* 폼리스트 01 */
 .form-list1 {
 	padding:17px 0;
@@ -720,6 +730,9 @@ select.styled1:disabled {
 	letter-spacing: -1px;
 }
 
+/* ============================================================================================
+	JO - 회원가입단
+============================================================================================ */
 /* 이용약관 및 개인정보 */
 .terms-wrap .terms-box {
 	overflow-x: hidden;
@@ -732,4 +745,37 @@ select.styled1:disabled {
 .terms-wrap .terms-chk {
 	margin:10px 0;
 	text-align:right;
+}
+
+
+/* ============================================================================================
+	LO - 로그인단
+============================================================================================ */
+.login-find {
+	margin-top:12px;
+	text-align: center;
+}
+.login-find span {
+	position: relative;
+	display: inline-block;
+	margin-left:11px;
+	padding-left:16px;
+	color:#666;
+	font-size:14px;
+	line-height: 19px;
+}
+.login-find span:before {
+	content: '';
+	position: absolute;
+	top:50%; left:0;
+	width:1px; height:14px;
+	margin-top:-7px;
+	background-color:#ccc;
+}
+.login-find span:first-child {
+	margin-left:0;
+	padding-left:0;
+}
+.login-find span:first-child:before {
+	display: none;
 }
