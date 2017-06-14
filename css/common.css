@@ -214,6 +214,10 @@ button {outline:0;vertical-align:top;}
 }
 .content {padding:0 15px 30px;}
 
+.content.wide-cont {
+	padding:0 0 30px;
+}
+
 /* 푸터 */
 .footer {
 	border-top:1px solid #d6d6d6;
