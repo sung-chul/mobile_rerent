@@ -967,6 +967,59 @@ select.styled1:disabled {
 	text-align: center;
 	line-height:200px;
 }
+
+.counsel-list {
+	border-bottom:1px solid #999;
+}
+.counsel-list .list {
+	position: relative;
+	padding:9px 100px 9px 15px;
+	border-top:1px solid #e5e5e5;
+}
+.counsel-list .list:first-child {
+	border-top:0;
+}
+.counsel-list .list .date {
+	display: block;
+	margin-bottom: 5px;
+	color:#999;
+	font-size:13px;
+	line-height: 18px;
+}
+.counsel-list .list .type {
+	display: block;
+	color:#666;
+	font-size:13px;
+	line-height: 18px;
+}
+.counsel-list .list .title {
+	overflow: hidden;
+	width:100%;
+	color:#333;
+	font-size:14px;
+	line-height: 18px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.counsel-list .list .ico-counsel {
+	position: absolute;
+	top:50%; right:15px;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width:66px;
+	height:24px;
+	border:1px solid #ccc;
+	border-radius:3px;
+	box-sizing: border-box;
+	color:#333;
+	font-size:13px;
+	line-height: 22px;
+	text-align: center;
+}
+.counsel-list .list .ico-counsel.complete {
+	color:#e9002d;
+}
 /* ============================================================================================
 	이벤트
 ============================================================================================ */
