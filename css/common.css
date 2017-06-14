@@ -1201,11 +1201,14 @@ select.styled1:disabled {
 	content:'';
 	display:block;
 	position:absolute;
-	right:0; top:0;
+	right:16px; top:18px;
 	width:12px;
-	height:11px;
-	background:url(../img/icon/ico_open_close.png) no-repeat right 0;
+	height:12px;
+	background:url(../img/icon/ico_open.png) no-repeat right center;
 	background-size:12px 12px;
+}
+.accordion-list .item.on:before {
+	background:url(../img/icon/ico_close.png) no-repeat right center;
 }
 .accordion-list .item .question {
 	padding:15px 0;
