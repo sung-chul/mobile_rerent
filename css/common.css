@@ -1467,11 +1467,11 @@ select.styled1:disabled {
 
 .office-list {padding:0 15px;}
 .office-list .item {
-	padding-bottom:25px;
 	border-bottom:1px solid #ddd;
 }
 .office-info {
 	position:relative;
+	min-height: 160px;
 }
 .office-info dt {
 	padding:16px 0;
