@@ -1370,3 +1370,60 @@ select.styled1:disabled {
 	color:#666;
 	line-height:20px;
 }
+/* ============================================================================================
+	지점안내
+============================================================================================ */
+.guid-area {
+	margin-top:15px;
+	border:1px solid #d9d9d9;
+	box-sizing:border-box;
+}
+.guid-area dl dt {
+	position:relative;
+	padding:13px 40px 13px 10px;
+	font-size:15px;
+	color:#333;
+	line-height:20px;
+	background-color:#f4f4f4;
+	letter-spacing:-1px;
+}
+.guid-area dl dt .tit {
+	font-size:13px;
+}
+.guid-area dl dt .tal-box {
+	display:block;
+	position:absolute;
+	right:6px; top:8px;
+	width:33px;
+	height:33px;
+	border:1px solid #cfcfcf;
+	border-radius:3px;
+	background:#fff url(../img/icon/ico_tel.png) no-repeat center center;
+	background-size:19px 19px;
+	box-sizing:border-box;
+}
+.guid-area dl dd {
+	padding:12px 10px;
+}
+.guid-area dl dd .guid-list {}
+.guid-area dl dd .guid-list .item {
+	margin-top:4px;
+	padding-left:16px;
+	font-size:14px;
+	color:#666;
+	line-height:19px;
+	letter-spacing:-1px;
+}
+.guid-area dl dd .guid-list .item:first-child {margin-top:0;}
+.guid-area dl dd .guid-list .item.guid01 {
+	background:url(../img/icon/ico_guid01.gif) no-repeat 0 5px;
+	background-size:11px 11px;
+}
+.guid-area dl dd .guid-list .item.guid02 {
+	background:url(../img/icon/ico_guid02.gif) no-repeat 0 5px;
+	background-size:9px 13px;
+}
+.guid-area dl dd .guid-list .item.guid03 {
+	background:url(../img/icon/ico_guid03.gif) no-repeat 0 5px;
+	background-size:11px 11px;
+}
