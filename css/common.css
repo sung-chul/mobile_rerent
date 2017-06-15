@@ -176,7 +176,7 @@ button {outline:0;vertical-align:top;}
 /* ============================================================================================
 	레이아웃
 ============================================================================================ */
-.wrapper {background-color:#fff;}
+.wrapper {}
 .wrapper.bg-gray {background-color:#f4f4f4;}
 .header {
 	position: relative;
