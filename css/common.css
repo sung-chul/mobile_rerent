@@ -937,14 +937,18 @@ select.styled1:disabled {
 	margin-top:26px;
 }
 .view-form .section {
+	margin-bottom:26px;
 	padding:0 15px 30px;
 	background:url(../img/bg/bg_line.jpg) 0 bottom repeat-x;
 	background-size:1px 10px;
 }
-.view-form .section:last-child {
+.view-form .section.last {
 	margin-bottom:0;
 	padding-bottom:0;
 	background:none;
+}
+.view-form .btn-wrap {
+	padding:0 15px;
 }
 
 .form-list1 {
