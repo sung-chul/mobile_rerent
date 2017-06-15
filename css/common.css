@@ -790,6 +790,9 @@ select.styled1:disabled {
 }
 
 /* 폼리스트 01 */
+.write-form {
+	margin-top:26px;
+}
 .write-form .section {
 	margin:0 -15px 26px;
 	padding:0 15px 30px;
