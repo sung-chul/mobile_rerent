@@ -412,6 +412,13 @@ button {outline:0;vertical-align:top;}
 	position: relative;
 	margin-bottom:15px;
 }
+.title-wrap .cTitle {
+	color:#333;
+	font-size:17px;
+	text-align: center;
+	line-height: 46px;
+}
+
 .title-wrap .cTitle01 {
 	display:inline-block;
 	color:#333;
@@ -459,6 +466,45 @@ button {outline:0;vertical-align:top;}
 .step-area .item .step .num {
 	font-size:16px;
 }
+
+/* 검색 박스 */
+.search-box {
+	position: relative;
+	padding: 12px 112px 12px 15px;
+	background-color:#f4f4f4;
+}
+.search-box .btn {
+	position: absolute;
+	top:12px; right:15px;
+	width:92px;
+}
+
+/* --------------------------------------------------------------------------------------------
+	테이블
+-------------------------------------------------------------------------------------------- */
+.board-view table {
+	border-top:1px solid #999;
+	border-bottom:1px solid #999;
+}
+.board-view table th,
+.board-view table td {
+	height:45px;
+	padding:0 10px;
+	color:#666;
+	font-size: 14px;
+	text-align: left;
+	border-top:1px solid #ddd;
+}
+.board-view table th {
+	background-color:#f0f0f0;
+	font-weight: normal;
+}
+.board-view table tr:first-child th,
+.board-view table tr:first-child td {
+	border-top:0;
+}
+
+
 /* --------------------------------------------------------------------------------------------
 	리스트
 -------------------------------------------------------------------------------------------- */
@@ -887,6 +933,20 @@ select.styled1:disabled {
 	background:none;
 }
 
+.view-form {
+	margin-top:26px;
+}
+.view-form .section {
+	padding:0 15px 30px;
+	background:url(../img/bg/bg_line.jpg) 0 bottom repeat-x;
+	background-size:1px 10px;
+}
+.view-form .section:last-child {
+	margin-bottom:0;
+	padding-bottom:0;
+	background:none;
+}
+
 .form-list1 {
 	margin-top: 21px;
 }
@@ -974,6 +1034,10 @@ select.styled1:disabled {
 	padding-bottom:129px;
 	background:url(../img/bg/bg_confirm.png) center bottom no-repeat;
 	background-size:216px 112px;
+}
+.confirm-area.type02 {
+	background:url(../img/bg/bg_confirm02.png) center bottom no-repeat;
+	background-size:184px 96px;
 }
 .confirm-area .text {
 	margin-bottom:10px;
