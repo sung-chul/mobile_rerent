@@ -488,12 +488,12 @@ button {outline:0;vertical-align:top;}
 }
 .board-view table th,
 .board-view table td {
-	height:45px;
-	padding:0 10px;
+	padding:13px 10px;
 	color:#666;
 	font-size: 14px;
 	text-align: left;
 	border-top:1px solid #ddd;
+	word-break:break-all;
 }
 .board-view table th {
 	background-color:#f0f0f0;
@@ -504,6 +504,31 @@ button {outline:0;vertical-align:top;}
 	border-top:0;
 }
 
+.board-view02 table {
+	border-top:1px solid #999;
+	border-right:1px solid #ddd;
+}
+.board-view02 table th,
+.board-view02 table td {
+	height:45px;
+	padding:0 10px;
+	color:#666;
+	font-size:14px;
+	text-align:left;
+	border-bottom:1px solid #ddd;
+	border-left:1px solid #ddd;
+}
+.board-view02 table th {
+	background-color:#f0f0f0;
+	font-weight:normal;
+}
+.board-view02 table td {
+
+}
+.board-view02 table tr:first-child th,
+.board-view02 table tr:first-child td {
+	border-top:0;
+}
 
 /* --------------------------------------------------------------------------------------------
 	리스트
@@ -538,11 +563,26 @@ button {outline:0;vertical-align:top;}
 	content:'';
 	display:block;
 	position:absolute;
-	left:0; top:14px;
+	left:0; top:11px;
 	width:5px;
 	height:1px;
 	background-color:#666;
 }
+
+.bullet-list02 .item02 {
+	position:relative;
+	padding-left:10px;
+	font-size:14px;
+	color:#666;
+	line-height:20px;
+}
+.bullet-list02 .item02:before {
+	content:'*';
+	display:block;
+	position:absolute;
+	left:0; top:0;
+}
+
 .bullet-list03 {}
 .bullet-list03 .item {
 	position:relative;
@@ -1078,6 +1118,10 @@ select.styled1:disabled {
 	width:100%; height:1px;
 	background-color:#666;
 }
+
+.terms-wrap .terms-box .info-title  {line-height:21px;}
+.terms-wrap .terms-box .terms-text {line-height:19px;}
+
 /* ============================================================================================
 	LO - 로그인단
 ============================================================================================ */
@@ -1591,7 +1635,23 @@ select.styled1:disabled {
 /* ============================================================================================
 	장기렌터카
 ============================================================================================ */
-
+.content.long-rent {padding-bottom:0;}
+.gray-bg-box {
+	background-color:#f4f4f4;
+	margin:0 -15px;
+	padding:10px 15px 20px;
+}
+.gray-bg-box .form-list1 {margin-top:0;}
+.gray-bg-box .form-list1 .form-item {margin:0;}
+.gray-bg-box .form-list1 .form-item .inp-title {
+	margin:0;
+	color:#333;
+	font-size:15px;
+	line-height:34px;
+}
+.gray-bg-box .form-list1 .form-item select {margin-bottom:5px;}
+.gray-bg-box .form-list1 .form-item select:last-child {margin-bottom:0;}
+.gray-bg-box .btn-text {margin-top:20px;}
 
 /* ============================================================================================
 	지점안내
@@ -1654,11 +1714,11 @@ select.styled1:disabled {
 
 .office-list {padding:0 15px;}
 .office-list .item {
+	padding-bottom:25px;
 	border-bottom:1px solid #ddd;
 }
 .office-info {
 	position:relative;
-	min-height: 160px;
 }
 .office-info dt {
 	padding:16px 0;
@@ -1717,3 +1777,66 @@ select.styled1:disabled {
 /* ============================================================================================
 	CO - 이용약관 & 개인정보처리방침
 ============================================================================================ */
+/* 이용약관 */
+.terms-area {margin-top:25px;}
+.terms-area .info-title  {
+	margin-top:15px;
+	padding:7px 0;
+	font-size:15px;
+	color:#333;
+	line-height:20px;
+}
+.terms-area .terms-text {
+	font-size:14px;
+	color:#666;
+	line-height:22px;
+}
+.terms-area .apply-text {color:#333;}
+.terms-area .terms-list01 .item {margin-top:6px;}
+.terms-area .terms-list01 .item:first-child {margin-top:0;}
+.terms-area .terms-list01 .item .number {
+	display:inline-block;
+	width:12px;
+	height:12px;
+	border:1px solid #666;
+	box-sizing:border-box;
+	border-radius:50%;
+	font-size:10px;
+	color:#666;
+	line-height:10px;
+	text-align:center;
+}
+.terms-area .terms-list02 {
+	margin-top:6px;
+	padding-left:16px;
+}
+.terms-area .terms-list02 .item {
+	margin-top:2px;
+	font-size:14px;
+	color:#666;
+	line-height:22px;
+}
+.terms-area .terms-list02 .item:first-child {margin-top:0;}
+/* 개인정보처리방침 */
+.terms-area .info-tit {
+	font-size:14px;
+	color:#666;
+	line-height:22px;
+}
+.terms-area .infor-box {
+	margin:8px 0;
+	padding-left:15px;
+}
+.terms-area .indivi-tit {
+	display:block;
+	margin:6px 0;
+	font-size:14px;
+	color:#333;
+	line-height:22px;
+}
+.terms-area .indivi-list02 {}
+.terms-area .indivi-list02 .item-indivi {
+	font-size:14px;
+	color:#666;
+	line-height:22px;
+}
