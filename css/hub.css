@@ -1,8 +1,13 @@
 @charset "utf-8";
 
-.hubpage {
-	position:fixed;
-	left:0;right:0;top:0;bottom:0;
+html {background-color:#f6f6f6;}
+.hubpage {position:relative;}
+.hubpage:before {
+	content:'';
+	position:absolute;
+	left:0;right:0;top:0;bottom:110px;
+	background:url(../img/hub/bg_hub.jpg) no-repeat 0 0;
+	background-size:100% 100%;
 }
 .hubpage .hub-logo {
 	position:absolute;
@@ -17,30 +22,49 @@
 	line-height:0;
 }
 .hubpage .link-area {
-	position:absolute;
-	left:0;right:0;top:0;bottom:111px;
-	background:url(../img/hub/bg_hub.jpg) no-repeat 0 0;
-	background-size:100% 100%;
+	position:relative;
+	height:520px;
+	width:336px;
+	margin:0 auto;
 }
 .hubpage .link-area .box {
 	position:absolute;
-	width:90%;
 	font-size:0;
 	text-indent:-9999px;
 	line-height:0;
 }
 .hubpage .link-area .box.top {
-	left:0;top:0;bottom:50%;
+	left:0;top:66px;
+	width:180px;
+	height:200px;
 	background:url(../img/hub/img_car01.png) no-repeat 0 100%;
 	background-size:100% auto;
 }
 .hubpage .link-area .box.bottom {
-	right:0;top:50%;bottom:0;
+	right:-8px;bottom:15px;
+	width:203px;
+	height:216px;
 	background:url(../img/hub/img_car02.png) no-repeat 100% 60%;
 	background-size:100% auto;
 }
 
 .hubpage .footer {
-	position:absolute;
-	left:0;right:0;bottom:0;
+	position:inherit !important;
+}
+
+/* 아이폰 5 대응 */
+@media only screen and (max-width:320px) {
+	.hubpage .link-area {
+		width:310px;
+		height:440px;
+	}
+	.hubpage .link-area .box.top {
+		width:150px;
+		height:168px;
+	}
+	.hubpage .link-area .box.bottom {
+		right:5px;
+		width:168px;
+		height:184px;
+	}
 }
