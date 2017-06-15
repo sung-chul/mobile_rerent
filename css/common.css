@@ -126,9 +126,9 @@ input[type=text]:disabled,
 input[type=tel]:disabled,
 input[type=number]:disabled,
 input[type=password]:disabled {
-	background-color:#eee;
-	color:#aaa;
-	border-color:#bbb;
+	background-color:#d9d9d9;
+	color:#999;
+	border-color:#ccc;
 	opacity:1;
 }
 input[type=submit] {-webkit-border-radius:0;border:0;border-radius:0;-webkit-appearance:none;}
@@ -139,9 +139,9 @@ textarea {
 	border-radius:3px;
 	background-color:#fff;
 	box-sizing:border-box;
-	color:#444;
-	font-size:15px;
-	line-height:17px ;
+	color:#999;
+	font-size:14px;
+	line-height:20px ;
 	-webkit-appearance:none;-moz-appearance:none;appearance:none;
 	word-break:keep-all;
 	word-wrap:break-word;
@@ -630,7 +630,7 @@ input[type=radio]:disabled.styled1:before {background-position:-42px -21px;}
 	height:20px;
 	color:#666;
 	font-size:14px;
-	line-height:20px;
+	line-height:18px;
 }
 .radio-label input[type=radio] {margin-right:6px;}
 
@@ -639,6 +639,17 @@ input[type=radio]:disabled.styled1:before {background-position:-42px -21px;}
 }
 .radio-list .radio-label:first-child {
 	margin-left:0;
+}
+
+.radio-list2 li {
+	margin-top:10px;
+}
+.radio-list2 li:first-child {
+	margin-top:0;
+}
+.radio-list2 li .etc-textarea {
+	margin-top:10px;
+	height: 100px;
 }
 
 /* 셀렉트박스 */
@@ -730,6 +741,18 @@ select.styled1:disabled {
 }
 .login-form .form-item {
 	margin-bottom:10px;
+}
+.login-form .form-item .inp-title {
+	margin-bottom:5px;
+}
+.login-form .form-item .inp-title {
+	color:#666;
+	font-size:14px;
+	line-height: 19px;
+}
+.login-form .form-item .inp-title em {
+	margin-left:4px;
+	color:#e9002d;
 }
 
 /* 폼리스트 01 */
