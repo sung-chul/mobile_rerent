@@ -410,11 +410,26 @@ button {outline:0;vertical-align:top;}
 	content:'';
 	display:block;
 	position:absolute;
-	left:0; top:14px;
+	left:0; top:11px;
 	width:5px;
 	height:1px;
 	background-color:#666;
 }
+
+.bullet-list02 .item02 {
+	position:relative;
+	padding-left:10px;
+	font-size:14px;
+	color:#666;
+	line-height:20px;
+}
+.bullet-list02 .item02:before {
+	content:'*';
+	display:block;
+	position:absolute;
+	left:0; top:0;
+}
+
 .bullet-list03 {}
 .bullet-list03 .item {
 	position:relative;
@@ -927,6 +942,58 @@ select.styled1:disabled {
 	left:0; right:0; bottom:-2px;
 	width:100%; height:1px;
 	background-color:#666;
+}
+
+.terms-wrap .terms-box .info-title  {line-height:21px;}
+.terms-wrap .terms-box .terms-text {line-height:19px;}
+
+.terms-wrap .terms-box .terms-list01 .item {margin-top:6px;}
+.terms-wrap .terms-box .terms-list01 .item:first-child {margin-top:0;}
+.terms-wrap .terms-box .terms-list01 .item .number {
+	display:inline-block;
+	width:12px;
+	height:12px;
+	border:1px solid #666;
+	box-sizing:border-box;
+	border-radius:50%;
+	font-size:10px;
+	color:#666;
+	line-height:10px;
+	text-align:center;
+}
+.terms-wrap .terms-box .terms-list02 {
+	margin-top:6px;
+	padding-left:16px;
+}
+.terms-wrap .terms-box .terms-list02 .item {
+	margin-top:2px;
+	font-size:14px;
+	color:#666;
+	line-height:22px;
+}
+.terms-wrap .terms-box .terms-list02 .item:first-child {margin-top:0;}
+/* 개인정보처리방침 */
+.terms-wrap .terms-box .info-tit {
+	font-size:14px;
+	color:#666;
+	line-height:22px;
+}
+.terms-wrap .terms-box .infor-box {
+	margin:8px 0;
+	padding-left:15px;
+}
+.terms-wrap .terms-box .indivi-tit {
+	display:block;
+	margin:6px 0;
+	font-size:14px;
+	color:#333;
+	line-height:22px;
+}
+.terms-wrap .terms-box .indivi-list02 {}
+.terms-wrap .terms-box .indivi-list02 .item-indivi {
+	font-size:14px;
+	color:#666;
+	line-height:22px;
 }
 /* ============================================================================================
 	LO - 로그인단
@@ -1467,11 +1534,11 @@ select.styled1:disabled {
 
 .office-list {padding:0 15px;}
 .office-list .item {
+	padding-bottom:25px;
 	border-bottom:1px solid #ddd;
 }
 .office-info {
 	position:relative;
-	min-height: 160px;
 }
 .office-info dt {
 	padding:16px 0;
@@ -1530,3 +1597,65 @@ select.styled1:disabled {
 /* ============================================================================================
 	CO - 이용약관 & 개인정보처리방침
 ============================================================================================ */
+/* 이용약관 */
+.terms-area {margin-top:25px;}
+.terms-area .info-title  {
+	margin-top:15px;
+	font-size:15px;
+	color:#333;
+	line-height:35px;
+}
+.terms-area .terms-text {
+	font-size:14px;
+	color:#666;
+	line-height:22px;
+}
+.terms-area .apply-text {color:#333;}
+.terms-area .terms-list01 .item {margin-top:6px;}
+.terms-area .terms-list01 .item:first-child {margin-top:0;}
+.terms-area .terms-list01 .item .number {
+	display:inline-block;
+	width:12px;
+	height:12px;
+	border:1px solid #666;
+	box-sizing:border-box;
+	border-radius:50%;
+	font-size:10px;
+	color:#666;
+	line-height:10px;
+	text-align:center;
+}
+.terms-area .terms-list02 {
+	margin-top:6px;
+	padding-left:16px;
+}
+.terms-area .terms-list02 .item {
+	margin-top:2px;
+	font-size:14px;
+	color:#666;
+	line-height:22px;
+}
+.terms-area .terms-list02 .item:first-child {margin-top:0;}
+/* 개인정보처리방침 */
+.terms-area .info-tit {
+	font-size:14px;
+	color:#666;
+	line-height:22px;
+}
+.terms-area .infor-box {
+	margin:8px 0;
+	padding-left:15px;
+}
+.terms-area .indivi-tit {
+	display:block;
+	margin:6px 0;
+	font-size:14px;
+	color:#333;
+	line-height:22px;
+}
+.terms-area .indivi-list02 {}
+.terms-area .indivi-list02 .item-indivi {
+	font-size:14px;
+	color:#666;
+	line-height:22px;
+}
