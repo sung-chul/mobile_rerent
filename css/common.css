@@ -398,6 +398,38 @@ button {outline:0;vertical-align:top;}
 	background-color:#666;
 }
 
+.bullet-list02 {}
+.bullet-list02 .item {
+	position:relative;
+	padding-left:12px;
+	font-size:14px;
+	color:#666;
+	line-height:20px;
+}
+.bullet-list02 .item:before {
+	content:'';
+	display:block;
+	position:absolute;
+	left:0; top:14px;
+	width:5px;
+	height:1px;
+	background-color:#666;
+}
+.bullet-list03 {}
+.bullet-list03 .item {
+	position:relative;
+	padding-left:14px;
+	font-size:14px;
+	color:#666;
+	line-height:20px;
+}
+.bullet-list03 .item:before {
+	content:'※';
+	display:block;
+	position:absolute;
+	left:0; top:0;
+}
+
 /* 공지 */
 .notice-box {
 	padding:12px 10px;
@@ -1214,10 +1246,10 @@ select.styled1:disabled {
 .tab-cont {display:none;}
 .tab-cont.on {display:block;}
 .accordion-list {}
-.accordion-list .item {
+.accordion-list .item-accordion {
 	position:relative;
 }
-.accordion-list .item:before {
+.accordion-list .item-accordion:before {
 	content:'';
 	display:block;
 	position:absolute;
@@ -1227,24 +1259,23 @@ select.styled1:disabled {
 	background:url(../img/icon/ico_open.png) no-repeat right center;
 	background-size:12px 12px;
 }
-.accordion-list .item.on:before {
+.accordion-list .item-accordion.on:before {
 	background:url(../img/icon/ico_close.png) no-repeat right center;
 }
-.accordion-list .item .question {
+.accordion-list .item-accordion .question {
 	padding:15px 0;
 	border-bottom:1px solid #ddd;
 }
-.accordion-list .item .question .title {
+.accordion-list .item-accordion .question .title {
 	position:relative;
-	overflow:hidden;
 	padding:0 36px 0 42px;
 	background-size:12px 12px;
 	font-size:14px;
 	color:#333;
-	line-height:20px;
+	line-height:17px;
 	letter-spacing:-1px;
 }
-.accordion-list .item .question .title:before {
+.accordion-list .item-accordion .question .title:before {
 	content:'Q';
 	display:block;
 	position:absolute;
@@ -1259,13 +1290,13 @@ select.styled1:disabled {
 	font-weight:bold;
 	text-align:center;
 }
-.accordion-list .item .answer {
+.accordion-list .item-accordion .answer {
 	display:none;
 	position:relative;
 	padding:15px 18px 15px 42px;
 	border-bottom:1px solid #ddd;
 }
-.accordion-list .item .answer:before {
+.accordion-list .item-accordion .answer:before {
 	content:'A';
 	display:block;
 	position:absolute;
@@ -1281,7 +1312,7 @@ select.styled1:disabled {
 	font-weight:bold;
 	text-align:center;
 }
-.accordion-list .item .answer .answer-txt {
+.accordion-list .item-accordion .answer .answer-txt {
 	font-size:14px;
 	color:#666;
 	line-height:20px;
