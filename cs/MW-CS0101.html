@@ -20,8 +20,18 @@
 	<div class="container">
 		<div class="content wide-cont">
 			<div class="tab-wrap">
-				<div class="order-area">
-
+				<div class="faq-list">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide item on"><span class="text">장기렌트</span></div>
+							<div class="swiper-slide item"><span class="text">LPG차량</span></div>
+							<div class="swiper-slide item"><span class="text">심사</span></div>
+							<div class="swiper-slide item"><span class="text">초기∙납입금</span></div>
+							<div class="swiper-slide item"><span class="text">대차서비스</span></div>
+							<div class="swiper-slide item"><span class="text">보험</span></div>
+							<div class="swiper-slide item"><span class="text">중도해지</span></div>
+						</div>
+					</div>
 				</div>
 				<div class="tab-cont on">
 					<ul class="accordion-list">
@@ -256,10 +266,23 @@
 
 
 <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../js/swiper.min.js"></script>
 <script type="text/javascript" src="../js/common.js"></script>
 <script>
 $(window).load(function(){
+	var swiper = new Swiper('.faq-list .swiper-container', {
+		slidesPerView:'auto',
+	});
+
+	$('.faq-list .item').click(function(){
+		var idx = $(this).index();
+		$('.faq-list .item').removeClass('on').eq(idx).addClass('on');
+		$('.tab-cont').removeClass('on').eq(idx).addClass('on');
+	});
+
 	/*아코디언*/
+	$('.accordion-list li:first-child').addClass('on').find('.answer').show();
+
 	$('.accordion-list .question').click(function(){
 		if($(this).parents('li').hasClass('on')){
 			$(this).parents('li').removeClass('on').find('.answer').slideUp(100);
