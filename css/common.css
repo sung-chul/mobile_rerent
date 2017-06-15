@@ -488,12 +488,12 @@ button {outline:0;vertical-align:top;}
 }
 .board-view table th,
 .board-view table td {
-	height:45px;
-	padding:0 10px;
+	padding:13px 10px;
 	color:#666;
 	font-size: 14px;
 	text-align: left;
 	border-top:1px solid #ddd;
+	word-break:break-all;
 }
 .board-view table th {
 	background-color:#f0f0f0;
@@ -504,6 +504,31 @@ button {outline:0;vertical-align:top;}
 	border-top:0;
 }
 
+.board-view02 table {
+	border-top:1px solid #999;
+	border-right:1px solid #ddd;
+}
+.board-view02 table th,
+.board-view02 table td {
+	height:45px;
+	padding:0 10px;
+	color:#666;
+	font-size:14px;
+	text-align:left;
+	border-bottom:1px solid #ddd;
+	border-left:1px solid #ddd;
+}
+.board-view02 table th {
+	background-color:#f0f0f0;
+	font-weight:normal;
+}
+.board-view02 table td {
+
+}
+.board-view02 table tr:first-child th,
+.board-view02 table tr:first-child td {
+	border-top:0;
+}
 
 /* --------------------------------------------------------------------------------------------
 	리스트
@@ -1093,54 +1118,6 @@ select.styled1:disabled {
 .terms-wrap .terms-box .info-title  {line-height:21px;}
 .terms-wrap .terms-box .terms-text {line-height:19px;}
 
-.terms-wrap .terms-box .terms-list01 .item {margin-top:6px;}
-.terms-wrap .terms-box .terms-list01 .item:first-child {margin-top:0;}
-.terms-wrap .terms-box .terms-list01 .item .number {
-	display:inline-block;
-	width:12px;
-	height:12px;
-	border:1px solid #666;
-	box-sizing:border-box;
-	border-radius:50%;
-	font-size:10px;
-	color:#666;
-	line-height:10px;
-	text-align:center;
-}
-.terms-wrap .terms-box .terms-list02 {
-	margin-top:6px;
-	padding-left:16px;
-}
-.terms-wrap .terms-box .terms-list02 .item {
-	margin-top:2px;
-	font-size:14px;
-	color:#666;
-	line-height:22px;
-}
-.terms-wrap .terms-box .terms-list02 .item:first-child {margin-top:0;}
-/* 개인정보처리방침 */
-.terms-wrap .terms-box .info-tit {
-	font-size:14px;
-	color:#666;
-	line-height:22px;
-}
-.terms-wrap .terms-box .infor-box {
-	margin:8px 0;
-	padding-left:15px;
-}
-.terms-wrap .terms-box .indivi-tit {
-	display:block;
-	margin:6px 0;
-	font-size:14px;
-	color:#333;
-	line-height:22px;
-}
-.terms-wrap .terms-box .indivi-list02 {}
-.terms-wrap .terms-box .indivi-list02 .item-indivi {
-	font-size:14px;
-	color:#666;
-	line-height:22px;
-}
 /* ============================================================================================
 	LO - 로그인단
 ============================================================================================ */
@@ -1784,9 +1761,10 @@ select.styled1:disabled {
 .terms-area {margin-top:25px;}
 .terms-area .info-title  {
 	margin-top:15px;
+	padding:8px 0;
 	font-size:15px;
 	color:#333;
-	line-height:35px;
+	line-height:20px;
 }
 .terms-area .terms-text {
 	font-size:14px;
