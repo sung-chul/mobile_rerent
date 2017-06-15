@@ -1201,7 +1201,7 @@ select.styled1:disabled {
 	content:'';
 	display:block;
 	position:absolute;
-	right:16px; top:18px;
+	right:16px; top:19px;
 	width:12px;
 	height:12px;
 	background:url(../img/icon/ico_open.png) no-repeat right center;
@@ -1217,7 +1217,7 @@ select.styled1:disabled {
 .accordion-list .item .question .title {
 	position:relative;
 	overflow:hidden;
-	padding:0 30px 0 44px;
+	padding:0 40px 0 44px;
 	background-size:12px 12px;
 	font-size:14px;
 	color:#333;
@@ -1237,10 +1237,34 @@ select.styled1:disabled {
 	border-radius:50%;
 	font-size:11px;
 	color:#fff;
-	line-height:20px;
+	line-height:18px;
+	font-weight:bold;
 	text-align:center;
 }
-.accordion-list .item .answer {display:none;}
+.accordion-list .item .answer {
+	display:none;
+	position:relative;
+	padding:15px 18px 15px 42px;
+	border-bottom:1px solid #ddd;
+}
+.accordion-list .item .answer:before {
+	content:'A';
+	display:block;
+	position:absolute;
+	left:15px; top:15px;
+	width:20px;
+	height:20px;
+	background-color:#f58025;
+	border-radius:50%;
+	box-sizing:border-box;
+	font-size:11px;
+	color:#fff;
+	line-height:20px;
+	font-weight:bold;
+	text-align:center;
+}
 .accordion-list .item .answer .answer-txt {
-
+	font-size:14px;
+	color:#666;
+	line-height:20px;
 }
