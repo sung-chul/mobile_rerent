@@ -328,7 +328,7 @@ button {outline:0;vertical-align:top;}
 /* 타이틀 */
 .title-wrap {
 	position: relative;
-	margin-bottom:13px;
+	margin-bottom:15px;
 }
 .title-wrap .cTitle01 {
 	display:inline-block;
@@ -338,7 +338,7 @@ button {outline:0;vertical-align:top;}
 }
 
 /* 스텝 */
-.step-wrap {margin-bottom:28px;}
+.step-wrap {margin-bottom:26px;}
 .step-area {
 	overflow: hidden;
 	margin-right:-2px;
@@ -464,6 +464,11 @@ button {outline:0;vertical-align:top;}
 	background-color:#e9002d;
 	color:#fff;
 }
+/* red */
+.btn-text-orange1 {
+	background-color:#f58025;
+	color:#fff;
+}
 /* gray */
 .btn-text-gray1 {
 	background-color:#3b3b3b;
@@ -540,10 +545,7 @@ button {outline:0;vertical-align:top;}
 	box-sizing:border-box;
 }
 
-.btn-list2 {
-	overflow:hidden;
-	margin:25px 8px 0;
-}
+.btn-list2 {overflow:hidden;}
 .btn-list2 .item {
 	float:left;
 	width:33%;
@@ -756,16 +758,25 @@ select.styled1:disabled {
 }
 
 /* 폼리스트 01 */
+.write-form .section {
+	margin:0 -15px 26px;
+	padding:0 15px 30px;
+	background:url(../img/bg/bg_line.jpg) 0 bottom repeat-x;
+	background-size:1px 10px;
+}
+.write-form .section:last-child {
+	margin-bottom:0;
+	padding-bottom:0;
+	background:none;
+}
+
 .form-list1 {
-	margin-bottom:30px;
-	padding:17px 0;
-	border-top:2px solid #e9002d;
-	border-bottom:1px solid #999;
+	margin-top: 21px;
 }
 .form-list1 .form-item {margin-top:17px;}
 .form-list1 .form-item:first-child {margin-top:0;}
 .form-list1 .form-item .inp-title {
-	margin-bottom:5px;
+	margin-bottom:6px;
 }
 .form-list1 .form-item .inp-title {
 	color:#666;
@@ -782,6 +793,12 @@ select.styled1:disabled {
 	font-size:13px;
 	line-height: 18px;
 }
+.phone-area {
+	margin:0 -15px;
+	padding:16px 15px 18px;
+	background-color:#f4f4f4;
+}
+
 /* 텍스트아레아 글자수 제한 */
 .text-len-box {}
 .text-len-box .len-text {
@@ -1058,7 +1075,10 @@ select.styled1:disabled {
 	color:#999;
 }
 /* 이벤트 상세 */
-.view-style {}
+.view-style.boardB {
+	padding-bottom:20px;
+	border-bottom:1px solid #999;
+}
 .view-style .notice-info {
 	position: relative;
 	padding:15px 0;
@@ -1078,9 +1098,9 @@ select.styled1:disabled {
 	line-height:14px;
 	text-align:center;
 }
-.view-style .notice-info .ico-flag.flag02 {
-	width:54px;
-}
+.view-style .notice-info .ico-flag.flag02 {width:54px;}
+.view-style .notice-info .ico-flag.flag03 {width:54px; color:#333;}
+
 .view-style .notice-info .title {
 	font-size:15px;
 	color:#333;
@@ -1120,7 +1140,7 @@ select.styled1:disabled {
 }
 
 .view-style .view-cont {
-	padding:15px 0;
+	padding-top:15px;
 	font-size:14px;
 	color:#666;
 	line-height:22px;
