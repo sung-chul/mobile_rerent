@@ -13,5 +13,9 @@ $(window).load(function(){
 	/* 새창 닫기 버튼 */
 	$('.header .btn-close').click(function(){
 		window.close();
+
+	/* 검색결과 출력 */
+	$('.gray-bg-box .btn-result').click(function(){
+		$('.rentcar-result').show();
 	});
 });
