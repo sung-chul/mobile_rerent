@@ -50,6 +50,7 @@ html {background-color:#f6f6f6;}
 
 .hubpage .footer {
 	position:inherit !important;
+	border-top:0;
 }
 
 /* 아이폰 5 대응 */

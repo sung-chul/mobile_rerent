@@ -588,7 +588,7 @@ button {outline:0;vertical-align:top;}
 	position:relative;
 	padding-left:14px;
 	font-size:14px;
-	color:#666;
+	color:#999;
 	line-height:20px;
 }
 .bullet-list03 .item:before {
@@ -1080,6 +1080,37 @@ select.styled1:disabled {
 	letter-spacing: -1px;
 }
 
+.price-box {
+	overflow: hidden;
+	margin-top:15px;
+	padding:24px 10px;
+	border:1px solid #8a8a8a;
+}
+.price-box .text {
+	display: inline-block;
+	color:#333;
+	font-size:14px;
+	line-height: 20px;
+}
+.price-box .price {
+	float: right;
+	display: inline-block;
+	color:#333;
+	font-size:14px;
+	line-height: 20px;
+}
+.price-box .price .num {
+	display: inline-block;
+	color:#e9002d;
+	font-size:21px;
+	line-height: 20px;
+	vertical-align: top;
+}
+.price-box .price .add {
+	color:#999;
+	font-size:13px;
+}
+
 /* ============================================================================================
 	JO - 회원가입단
 ============================================================================================ */
@@ -1095,6 +1126,10 @@ select.styled1:disabled {
 .terms-wrap .terms-chk {
 	margin:10px 0;
 	text-align:right;
+}
+.terms-wrap.type02 {
+	padding-bottom:10px;
+	border-bottom:1px solid #ddd;
 }
 
 .confirm-area {
@@ -1658,10 +1693,9 @@ select.styled1:disabled {
 /* ============================================================================================
 	장기렌터카
 ============================================================================================ */
-.content.long-rent {padding-bottom:0;}
+.content.long-rent {padding:0;}
 .gray-bg-box {
 	background-color:#f4f4f4;
-	margin:0 -15px;
 	padding:10px 15px 20px;
 }
 .gray-bg-box .form-list1 {margin-top:0;}
@@ -1675,6 +1709,83 @@ select.styled1:disabled {
 .gray-bg-box .form-list1 .form-item select {margin-bottom:5px;}
 .gray-bg-box .form-list1 .form-item select:last-child {margin-bottom:0;}
 .gray-bg-box .btn-text {margin-top:20px;}
+
+/* 검색결과 */
+.rentcar-result {padding:20px 0 0;}
+.rentcar-result .sorting-area {
+	overflow:hidden;
+	padding:10px 15px;
+	border-bottom:1px solid #999;
+}
+.rentcar-result .sorting-area .all-len {
+	float:left;
+	color:#333;
+	font-size:14px;
+	line-height:45px;
+}
+.rentcar-result .sorting-area .all-len .len {color:#e9002d;}
+.rentcar-result .sorting-area select {
+	float:right;
+	width:168px;
+}
+/* 썸네일 리스트 */
+.thumb-list2 {}
+.thumb-list2 .thumb-item {
+	border-top:5px solid #f4f4f4;
+	border-bottom:1px solid #ddd;
+}
+.thumb-list2 .thumb-item .link {display:block;}
+.thumb-list2 .thumb-title {
+	overflow:hidden;
+	padding:0 15px;
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	color:#333;
+	font-size:15px;
+	text-overflow:ellipsis;
+	line-height:40px;
+	white-space:nowrap;
+}
+.thumb-list2 .thumb-item:first-child,
+	.thumb-list2 .thumb-item:first-child .thumb-title {
+	border-top:0;
+}
+.thumb-list2 .thumb-cont {
+	position:relative;
+	padding:15px 0 15px 182px;
+}
+.thumb-list2 .thumb-item .img-area {
+	overflow:hidden;
+	position:absolute;
+	left:15px;top:15px;
+	width:155px;
+	height:103px;
+	font-size:0;
+	line-height:0;
+}
+.thumb-list2 .thumb-item .img-area img {width:100%;}
+.thumb-list2 .thumb-item .text-area {
+	overflow:hidden;
+}
+.thumb-list2 .thumb-item .text-area .info-text {
+	overflow:hidden;
+	margin-left:-19px;
+}
+.thumb-list2 .thumb-item .text-area .info-text p {
+	float:left;
+	position:relative;
+	margin-left:9px;
+	padding-left:10px;
+}
+.thumb-list2 .thumb-item .text-area .info-text p:last-child {
+	clear:both;
+}
+.thumb-list2 .thumb-item .text-area .info-text p:before {}
+.thumb-list2 .thumb-item .text-area {}
+.thumb-list2 .thumb-item .text-area {}
+.thumb-list2 .thumb-item .text-area {}
+.thumb-list2 {}
+.thumb-list2 {}
 
 /* ============================================================================================
 	지점안내
