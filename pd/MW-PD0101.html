@@ -71,10 +71,10 @@
 						</select>
 					</div>
 				</div>
-				<button type="button" class="btn-text btn-h50 btn-text-red1">차량검색</button>
+				<button type="button" class="btn-text btn-h50 btn-text-red1 btn-result">차량검색</button>
 			</div>
 
-			<!-- 검색결과 -->
+			<!-- 검색결과 (내역있음) -->
 			<div class="rentcar-result">
 				<div class="sorting-area">
 					<p class="all-len">전체 <span class="len">4,099</span>대</p>
@@ -132,6 +132,20 @@
 						</a>
 					</div>
 				</div>
+			</div>
+
+			<!-- 검색결과 (내역없음) -->
+			<div class="rentcar-result">
+				<div class="sorting-area">
+					<p class="all-len">전체 <span class="len">4,099</span>대</p>
+					<select class="styled1">
+						<option>렌트료 낮은순</option>
+						<option>렌트료 높은순</option>
+						<option>기간 짧은 순</option>
+						<option>기간 긴 순</option>
+					</select>
+				</div>
+				<div class="no-result">검색 결과가 없습니다.</div>
 			</div>
 		</div>
 	</div>
