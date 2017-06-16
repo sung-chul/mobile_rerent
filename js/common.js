@@ -9,4 +9,9 @@ $(window).load(function(){
 			$(this).css({'position':'absolute', 'left':'0', 'right':'0', 'bottom':'0'});
 		}
 	});
+
+	/* 검색결과 출력 */
+	$('.gray-bg-box .btn-result').click(function(){
+		$('.rentcar-result').show();
+	});
 });

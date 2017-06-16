@@ -1711,7 +1711,10 @@ select.styled1:disabled {
 .gray-bg-box .btn-text {margin-top:20px;}
 
 /* 검색결과 */
-.rentcar-result {padding:20px 0 0;}
+.rentcar-result {
+	display:none;
+	padding:20px 0 0;
+}
 .rentcar-result .sorting-area {
 	overflow:hidden;
 	padding:10px 15px;
@@ -1729,16 +1732,22 @@ select.styled1:disabled {
 	width:168px;
 }
 /* 썸네일 리스트 */
-.thumb-list2 {}
+.thumb-list2 {background-color:#f4f4f4;}
 .thumb-list2 .thumb-item {
-	border-top:5px solid #f4f4f4;
+	margin-top:5px;
+	border-top:1px solid #ddd;
 	border-bottom:1px solid #ddd;
+	background-color:#fff;
 }
+.thumb-list2 .thumb-item:first-child {
+	margin-top:0;
+	border-top:0;
+}
+.thumb-list2 .thumb-item:last-child {border-bottom:0;}
 .thumb-list2 .thumb-item .link {display:block;}
 .thumb-list2 .thumb-title {
 	overflow:hidden;
 	padding:0 15px;
-	border-top:1px solid #ddd;
 	border-bottom:1px solid #ddd;
 	color:#333;
 	font-size:15px;
@@ -1746,13 +1755,13 @@ select.styled1:disabled {
 	line-height:40px;
 	white-space:nowrap;
 }
-.thumb-list2 .thumb-item:first-child,
-	.thumb-list2 .thumb-item:first-child .thumb-title {
-	border-top:0;
-}
 .thumb-list2 .thumb-cont {
 	position:relative;
-	padding:15px 0 15px 182px;
+	min-height:105px;
+	padding:12px 0 15px 182px;
+}
+@media only screen and (max-width:320px) {
+	.thumb-list2 .thumb-cont {padding-left:150px;}
 }
 .thumb-list2 .thumb-item .img-area {
 	overflow:hidden;
@@ -1763,10 +1772,11 @@ select.styled1:disabled {
 	font-size:0;
 	line-height:0;
 }
-.thumb-list2 .thumb-item .img-area img {width:100%;}
-.thumb-list2 .thumb-item .text-area {
-	overflow:hidden;
+@media only screen and (max-width:320px) {
+	.thumb-list2 .thumb-item .img-area {width:125px;height:auto;}
 }
+.thumb-list2 .thumb-item .img-area img {width:100%;}
+.thumb-list2 .thumb-item .text-area {overflow:hidden;}
 .thumb-list2 .thumb-item .text-area .info-text {
 	overflow:hidden;
 	margin-left:-19px;
@@ -1776,16 +1786,89 @@ select.styled1:disabled {
 	position:relative;
 	margin-left:9px;
 	padding-left:10px;
+	color:#999;
+	font-size:14px;
+	line-height:19px;
 }
-.thumb-list2 .thumb-item .text-area .info-text p:last-child {
-	clear:both;
+.thumb-list2 .thumb-item .text-area .info-text p:last-child {clear:both;}
+.thumb-list2 .thumb-item .text-area .info-text p:before {
+	content:'';
+	position:absolute;
+	left:0;top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:1px;
+	height:14px;
+	background-color:#ddd;
 }
-.thumb-list2 .thumb-item .text-area .info-text p:before {}
-.thumb-list2 .thumb-item .text-area {}
-.thumb-list2 .thumb-item .text-area {}
-.thumb-list2 .thumb-item .text-area {}
-.thumb-list2 {}
-.thumb-list2 {}
+.thumb-list2 .thumb-item .text-area .price-text {
+	overflow:hidden;
+	line-height:40px;
+}
+.thumb-list2 .thumb-item .text-area .price-text .price {
+	float:left;
+	color:#333;
+	font-size:14px;
+}
+.thumb-list2 .thumb-item .text-area .price-text .price .number {
+	color:#e9002d;
+	font-size:20px;
+	line-height:28px;
+}
+.thumb-list2 .thumb-item .text-area .price-text .month {
+	float:left;
+	position:relative;
+	margin-left:9px;
+	padding-left:10px;
+	color:#666;
+	font-size:14px;
+}
+.thumb-list2 .thumb-item .text-area .price-text .month:before {
+	content:'';
+	position:absolute;
+	left:0;top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:1px;
+	height:14px;
+	background-color:#ddd;
+}
+.thumb-list2 .thumb-item .icon-area {
+	overflow:hidden;
+	margin-top:3px;
+}
+.thumb-list2 .thumb-item .icon-area .icon {
+	float:left;
+	width:70px;
+	height:24px;
+	margin-left:5px;
+	box-sizing:border-box;
+	border-radius:3px;
+	font-size:13px;
+	text-align:center;
+}
+.thumb-list2 .thumb-item .icon-area .icon:first-child {margin-left:0;}
+.thumb-list2 .thumb-item .icon-area .icon-advice {
+	background-color:#666;
+	color:#fff;
+	line-height:24px;
+}
+.thumb-list2 .thumb-item .icon-area .icon-advice.on {background-color:#f58025;}
+.thumb-list2 .thumb-item .icon-area .icon-len {
+	border:1px solid #666;
+	line-height:22px;
+}
+
+/* 결과없음 */
+.rentcar-result .no-result {
+	height:215px;
+	color:#999;
+	font-size:15px;
+	text-align:center;
+	line-height:215px;
+}
 
 /* ============================================================================================
 	지점안내
