@@ -1723,6 +1723,7 @@ select.styled1:disabled {
 .rentcar-result {
 	display:none;
 	padding:20px 0 0;
+	background-color:#fff;
 }
 .rentcar-result .sorting-area {
 	overflow:hidden;
@@ -1751,13 +1752,12 @@ select.styled1:disabled {
 	color:#333;
 	font-size:14px;
 	line-height: 48px;
+	border-bottom:1px solid #999;
 }
 .rentcar-result02 .result-text .num {
 	color:#e9002d;
 }
-.rentcar-result02 .result-list {
-	border-top:1px solid #999;
-}
+.rentcar-result02 .result-list {}
 .rentcar-result02 .result-list .item {
 	border-bottom:1px solid #ccc;
 }
@@ -1946,8 +1946,90 @@ select.styled1:disabled {
 	line-height:22px;
 }
 
+.thumb-list3 {background-color:#f4f4f4;}
+.thumb-list3 .thumb-item {
+	margin-top:5px;
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	background-color:#fff;
+}
+.thumb-list3 .thumb-item:first-child {
+	margin-top:0;
+	border-top:0;
+}
+.thumb-list3 .thumb-item .link {display:block;}
+
+.thumb-list3 .thumb-cont {
+	position:relative;
+	min-height:97px;
+	padding:12px 15px 15px 170px;
+}
+@media only screen and (max-width:320px) {
+	.thumb-list3 .thumb-cont {
+		min-height: 83px;
+		padding-left:150px;
+	}
+}
+.thumb-list3 .thumb-item .goods-name {
+	color:#333;
+	font-size:14px;
+	line-height: 18px;
+}
+.thumb-list3 .thumb-item .img-area {
+	overflow:hidden;
+	position:absolute;
+	left:15px;top:15px;
+	width:145px;
+	height:97px;
+	font-size:0;
+	line-height:0;
+}
+@media only screen and (max-width:320px) {
+	.thumb-list3 .thumb-item .img-area {
+		width:125px; height:83px;
+	}
+}
+
+.thumb-list3 .thumb-item .img-area img {
+	width:100%;
+}
+.thumb-list3 .thumb-item .price-text {
+	position: absolute;
+	left:170px; bottom:15px;
+}
+@media only screen and (max-width:320px) {
+	.thumb-list3 .thumb-item .price-text {
+		left:150px;
+	}
+}
+.thumb-list3 .thumb-item .price-text .price {
+	font-size:16px;
+	color:#ea002c;
+}
+.thumb-list3 .thumb-item .price-text .month {
+	color:#333;
+	font-size:13px;
+}
+
+.thumb-img .item {
+	margin-top:5px;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+}
+.thumb-img .item:first-child {
+	margin-top:0;
+}
+.thumb-img .item .img-wrap {
+	display: block;
+}
+.thumb-img .item .img-wrap img {
+	width:100%;
+	vertical-align: top;
+}
+
 /* 결과없음 */
-.rentcar-result .no-result {
+.rentcar-result .no-result,
+.rentcar-result02 .no-result {
 	height:215px;
 	color:#999;
 	font-size:15px;
