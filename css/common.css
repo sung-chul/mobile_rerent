@@ -588,7 +588,7 @@ button {outline:0;vertical-align:top;}
 	position:relative;
 	padding-left:14px;
 	font-size:14px;
-	color:#666;
+	color:#999;
 	line-height:20px;
 }
 .bullet-list03 .item:before {
@@ -1057,6 +1057,37 @@ select.styled1:disabled {
 	letter-spacing: -1px;
 }
 
+.price-box {
+	overflow: hidden;
+	margin-top:15px;
+	padding:24px 10px;
+	border:1px solid #8a8a8a;
+}
+.price-box .text {
+	display: inline-block;
+	color:#333;
+	font-size:14px;
+	line-height: 20px;
+}
+.price-box .price {
+	float: right;
+	display: inline-block;
+	color:#333;
+	font-size:14px;
+	line-height: 20px;
+}
+.price-box .price .num {
+	display: inline-block;
+	color:#e9002d;
+	font-size:21px;
+	line-height: 20px;
+	vertical-align: top;
+}
+.price-box .price .add {
+	color:#999;
+	font-size:13px;
+}
+
 /* ============================================================================================
 	JO - 회원가입단
 ============================================================================================ */
@@ -1072,6 +1103,10 @@ select.styled1:disabled {
 .terms-wrap .terms-chk {
 	margin:10px 0;
 	text-align:right;
+}
+.terms-wrap.type02 {
+	padding-bottom:10px;
+	border-bottom:1px solid #ddd;
 }
 
 .confirm-area {
