@@ -2146,3 +2146,32 @@ select.styled1:disabled {
 	line-height:18px;
 }
 .accordion-list02 .item-accordion .answer .bullet-list02 .item {margin-top:5px;}
+/* ============================================================================================
+	error - 에러
+============================================================================================ */
+.error-area {
+	margin-top:59px;
+	padding-top:170px;
+	background:url(../img/img/error_404.png) no-repeat center 0;
+	background-size:146px 138px;
+	text-align:center;
+}
+.error-area .text01 {
+	font-size:15px;
+	color:#333;
+	line-height:20px;
+
+}
+.error-area .text02 {
+	margin-top:8px;
+	font-size:13px;
+	color:#666;
+	line-height:18px;
+}
+.error-area.type {
+	margin-top:140px;
+	padding:170px 15px 0;
+	background:url(../img/img/error_500.png) no-repeat center 0;
+	background-size:146px 138px;
+	text-align:center;
+}
