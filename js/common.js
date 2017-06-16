@@ -20,6 +20,14 @@ $(window).load(function(){
 		$('.rentcar-result').show();
 	});
 
+	/* 이미지 슬라이드 */
+	$('.img-slide .swiper-container').each(function(){
+		var swiper = new Swiper(this, {
+			pagination: '.img-slide .swiper-pagination',
+			paginationType: 'fraction'
+		});
+	});
+
 	/* ===========================================================================================================
 		레이어 팝업
 	=========================================================================================================== */
@@ -47,5 +55,4 @@ $(window).load(function(){
 		$('.popup-close').remove();
 		$('body').css({'overflow-y':'inherit'});
 	});
-
 });
