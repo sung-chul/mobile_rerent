@@ -18,10 +18,11 @@
 
 
 	<div class="container">
-		<div class="content">
+		<div class="content wide-cont">
 			<ul class="accordion-list02">
 				<li class="item-accordion">
 					<div class="question">
+						<span class="step-mark">step1</span>
 						<p class="title">ReRent 홈페이지 장기렌터카 매물 검색</p>
 					</div>
 					<div class="answer">
@@ -34,6 +35,7 @@
 				</li>
 				<li class="item-accordion">
 					<div class="question">
+						<span class="step-mark">step2</span>
 						<p class="title">견적 상담 문의</p>
 					</div>
 					<div class="answer">
@@ -47,6 +49,7 @@
 				</li>
 				<li class="item-accordion">
 					<div class="question">
+						<span class="step-mark">step3</span>
 						<p class="title">신용도 심사</p>
 					</div>
 					<div class="answer">
@@ -82,6 +85,7 @@
 				</li>
 				<li class="item-accordion">
 					<div class="question">
+						<span class="step-mark">step4</span>
 						<p class="title">차량 확인</p>
 					</div>
 					<div class="answer">
@@ -90,10 +94,11 @@
 				</li>
 				<li class="item-accordion">
 					<div class="question">
+						<span class="step-mark">step5</span>
 						<p class="title">계약 체결 후 서류 접수</p>
 					</div>
 					<div class="answer">
-						<p class="answer-text">ReRent 담당직원 안내에 따라 계약서를 작성합니다./p>
+						<p class="answer-text">ReRent 담당직원 안내에 따라 계약서를 작성합니다.</p>
 						<ul class="bullet-list02">
 							<li class="item">계약 준비 서류</li>
 						</ul>
@@ -130,6 +135,7 @@
 				</li>
 				<li class="item-accordion">
 					<div class="question">
+						<span class="step-mark">step6</span>
 						<p class="title">차량 인도 및 계약 체결 서류 사본 발송</p>
 					</div>
 					<div class="answer">
@@ -142,6 +148,7 @@
 				</li>
 				<li class="item-accordion">
 					<div class="question">
+						<span class="step-mark">step7</span>
 						<p class="title">초기 납입금 인출</p>
 					</div>
 					<div class="answer">
@@ -150,6 +157,7 @@
 				</li>
 				<li class="item-accordion">
 					<div class="question">
+						<span class="step-mark">step8</span>
 						<p class="title">차량 반납</p>
 					</div>
 					<div class="answer">
@@ -185,14 +193,14 @@
 <script>
 $(window).load(function(){
 	/*아코디언*/
-	$('.accordion-list li:first-child').addClass('on').find('.answer').show();
+	$('.accordion-list02 .item-accordion:first-child').addClass('on').find('.answer').show();
 
-	$('.accordion-list .question').click(function(){
-		if($(this).parents('li').hasClass('on')){
-			$(this).parents('li').removeClass('on').find('.answer').slideUp(100);
+	$('.accordion-list02 .question').click(function(){
+		if($(this).parents('.item-accordion').hasClass('on')){
+			$(this).parents('.item-accordion').removeClass('on').find('.answer').slideUp(100);
 		}else{
-			$('.accordion-list .question').parents('li').removeClass('on').find('.answer').slideUp(100);
-			$(this).parents('li').addClass('on').find('.answer').slideDown(200);
+			$('.accordion-list02 .question').parents('.item-accordion').removeClass('on').find('.answer').slideUp(100);
+			$(this).parents('.item-accordion').addClass('on').find('.answer').slideDown(200);
 		}
 	});
 });
