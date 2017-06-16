@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ko">
+<html lang="ko" class="bg-gray">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -11,183 +11,250 @@
 <body>
 <div class="wrapper">
 	<div class="header">
-		<h2 class="page-title">견적 시뮬레이션</h2>
-		<button type="button" class="btn-splite btn-prev">이전</button>
-		<button type="button" class="btn-splite btn-search">통합검색</button>
+		<h2 class="page-title">장기렌터카 차량 검색</h2>
+		<button type="button" class="btn-splite btn-close">닫기</button>
 	</div>
-
 
 	<div class="container">
-		<div class="step-wrap mgB0">
-			<ul class="step-area">
-				<li class="item on"><span class="step">Step.<span class="num">01</span></span>차량/계약</li>
-				<li class="item"><span class="step">Step.<span class="num">02</span></span>상담요청</li>
-				<li class="item"><span class="step">Step.<span class="num">03</span></span>요청완료</li>
-			</ul>
-		</div>
-		<div class="content wide-cont">
-			<div class="title-wrap mgB0">
-				<h3 class="cTitle">차량선택</h3>
-			</div>
-			<div class="search-box">
-				<input type="text" placeholder="차량검색" class="text">
-				<button type="button" class="btn-text btn-h45 btn-text-gray2 btn">차량검색</button>
-			</div>
-			<div class="view-form">
-				<div class="section">
-					<div class="title-wrap">
-						<h4 class="cTitle01">선택 차량기본정보</h3>
+		<div class="content long-rent">
+			<div class="gray-bg-box">
+				<div class="form-list1">
+					<div class="form-item">
+						<h3 class="inp-title">월 렌트료(만원)</h3>
+						<select class="styled1">
+							<option>전체</option>
+							<option>50</option>
+							<option>80</option>
+							<option>100</option>
+						</select>
+						<select class="styled1">
+							<option>전체</option>
+							<option>50</option>
+							<option>80</option>
+							<option>100</option>
+						</select>
 					</div>
-					<div class="board-view">
-						<table>
-							<caption>선택 차량기본정보<caption>
-							<colgroup>
-								<col style="width:126px;">
-								<col style="*">
-							</colgroup>
-							<tbody>
-								<tr>
-									<th scope="row">제조사</th>
-									<td>쉐보레</td>
-								</tr>
-								<tr>
-									<th scope="row">모델</th>
-									<td></td>
-								</tr>
-								<tr>
-									<th scope="row">등급</th>
-									<td></td>
-								</tr>
-								<tr>
-									<th scope="row">상세등급</th>
-									<td></td>
-								</tr>
-								<tr>
-									<th scope="row">미션</th>
-									<td></td>
-								</tr>
-								<tr>
-									<th scope="row">연료</th>
-									<td></td>
-								</tr>
-								<tr>
-									<th scope="row">배기량(cc)</th>
-									<td></td>
-								</tr>
-								<tr>
-									<th scope="row">주행거리</th>
-									<td></td>
-								</tr>
-								<tr>
-									<th scope="row">년월식</th>
-									<td></td>
-								</tr>
-								<tr>
-									<th scope="row">색상</th>
-									<td></td>
-								</tr>
-								<tr>
-									<th scope="row">기준가격</th>
-									<td></td>
-								</tr>
-							</tbody>
-						</table>
+					<div class="form-item">
+						<h3 class="inp-title">차종</h3>
+						<select class="styled1">
+							<option>제조사</option>
+							<option>현대</option>
+							<option>기아</option>
+							<option>쉐보레</option>
+						</select>
+						<select class="styled1">
+							<option>모델</option>
+							<option>아반떼</option>
+							<option>소나타</option>
+							<option>그랜져</option>
+						</select>
+					</div>
+					<div class="form-item">
+						<h3 class="inp-title">연료/연식</h3>
+						<select class="styled1">
+							<option>연식</option>
+							<option>2017년</option>
+							<option>2016년</option>
+							<option>2015년</option>
+						</select>
+						<select class="styled1">
+							<option>전체</option>
+							<option>가솔린</option>
+							<option>경유</option>
+							<option>LPG</option>
+						</select>
 					</div>
 				</div>
-				<div class="section last">
-					<div class="title-wrap">
-						<h4 class="cTitle01">계약조건 선택</h3>
-					</div>
-					<div class="form-list1">
-						<div class="form-item">
-							<h3 class="inp-title">대여기간</h3>
-							<select class="styled1">
-								<option>선택</option>
-								<option>선택</option>
-								<option>선택</option>
-							</select>
-						</div>
-						<div class="form-item">
-							<h3 class="inp-title">연간 약정운행거리</h3>
-							<select class="styled1">
-								<option>선택</option>
-								<option>선택</option>
-								<option>선택</option>
-							</select>
-						</div>
-						<div class="form-item">
-							<h3 class="inp-title">보증금</h3>
-							<select class="styled1">
-								<option>선택</option>
-								<option>선택</option>
-								<option>선택</option>
-							</select>
-						</div>
-						<div class="form-item">
-							<h3 class="inp-title">상품유형</h3>
-							<select class="styled1">
-								<option>선택</option>
-								<option>선택</option>
-								<option>선택</option>
-							</select>
-						</div>
-						<div class="form-item">
-							<h3 class="inp-title">정비유형</h3>
-							<select class="styled1">
-								<option>선택</option>
-								<option>선택</option>
-								<option>선택</option>
-							</select>
-						</div>
-						<div class="form-item">
-							<h3 class="inp-title">보험연령</h3>
-							<select class="styled1">
-								<option>선택</option>
-								<option>선택</option>
-								<option>선택</option>
-							</select>
-						</div>
-						<div class="form-item">
-							<h3 class="inp-title">대물배상</h3>
-							<select class="styled1">
-								<option>선택</option>
-								<option>선택</option>
-								<option>선택</option>
-							</select>
-						</div>
-						<div class="form-item">
-							<h3 class="inp-title">자차 면책금</h3>
-							<select class="styled1">
-								<option>선택</option>
-								<option>선택</option>
-								<option>선택</option>
-							</select>
-						</div>
-					</div>
-				</div>
-				
-				<div class="btn-wrap">
-					<button type="button" class="btn-text btn-h50 btn-text-red1">견적 계산하기</button>
-				</div>
+				<button type="button" class="btn-text btn-h50 btn-text-red1">차량검색</button>
 			</div>
-		</div>
-	</div>
 
-	<div class="footer">
-		<div class="foot-call">
-			<div class="call-item">
-				<span class="title">장기렌트문의</span>
-				<a href="tel:1670-2548" class="btn-call">1670-2548</a>
+			<div class="rentcar-result02">
+				<div class="result-text">전체 <span class="num">26</span>대</div>
+				<ul class="result-list">
+					<li class="item">
+						<div class="goods-wrap">
+							<p class="title">랜드로버 레인지로버 이보크 2.2 SD4 프레스티지 (*** 1234) /디젤</p>
+							<span class="status">
+								<span class="status02">상담중</span>
+								<span class="status03">대기 15명</span>
+							</span>
+						</div>
+						<div class="info-box">
+							<div class="board-view">
+								<table>
+									<caption>선택 차량기본정보<caption>
+									<colgroup>
+										<col style="width:75px;">
+										<col style="*">
+										<col style="width:75px;">
+										<col style="*">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">연월식</th>
+											<td colspan="3">2016년 10월</td>
+										</tr>
+										<tr>
+											<th scope="row">색상</th>
+											<td>흰색</td>
+											<th scope="row">주행거리</th>
+											<td>102,265km</td>
+										</tr>
+										<tr>
+											<th scope="row">12개월</th>
+											<td>454,000</td>
+											<th scope="row">24개월</th>
+											<td>414,000</td>
+										</tr>
+										<tr>
+											<th scope="row">36개월</th>
+											<td>385,000</td>
+											<th scope="row">48개월</th>
+											<td>360,000</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</li>
+					<li class="item">
+						<div class="goods-wrap">
+							<p class="title">랜드로버 레인지로버 이보크 2.2 SD4 프레스티지 (*** 1234) /디젤</p>
+							<span class="status">
+								<span class="status01">상담가능</span>
+							</span>
+						</div>
+						<div class="info-box">
+							<div class="board-view">
+								<table>
+									<caption>선택 차량기본정보<caption>
+									<colgroup>
+										<col style="width:75px;">
+										<col style="*">
+										<col style="width:75px;">
+										<col style="*">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">연월식</th>
+											<td colspan="3">2016년 10월</td>
+										</tr>
+										<tr>
+											<th scope="row">색상</th>
+											<td>흰색</td>
+											<th scope="row">주행거리</th>
+											<td>102,265km</td>
+										</tr>
+										<tr>
+											<th scope="row">12개월</th>
+											<td>454,000</td>
+											<th scope="row">24개월</th>
+											<td>414,000</td>
+										</tr>
+										<tr>
+											<th scope="row">36개월</th>
+											<td>385,000</td>
+											<th scope="row">48개월</th>
+											<td>360,000</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</li>
+					<li class="item">
+						<div class="goods-wrap">
+							<p class="title">랜드로버 레인지로버 이보크 2.2 SD4 프레스티지 (*** 1234) /디젤</p>
+							<span class="status">
+								<span class="status02">상담중</span>
+								<span class="status03">대기 15명</span>
+							</span>
+						</div>
+						<div class="info-box">
+							<div class="board-view">
+								<table>
+									<caption>선택 차량기본정보<caption>
+									<colgroup>
+										<col style="width:75px;">
+										<col style="*">
+										<col style="width:75px;">
+										<col style="*">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">연월식</th>
+											<td colspan="3">2016년 10월</td>
+										</tr>
+										<tr>
+											<th scope="row">색상</th>
+											<td>흰색</td>
+											<th scope="row">주행거리</th>
+											<td>102,265km</td>
+										</tr>
+										<tr>
+											<th scope="row">12개월</th>
+											<td>454,000</td>
+											<th scope="row">24개월</th>
+											<td>414,000</td>
+										</tr>
+										<tr>
+											<th scope="row">36개월</th>
+											<td>385,000</td>
+											<th scope="row">48개월</th>
+											<td>360,000</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</li>
+					<li class="item">
+						<div class="goods-wrap">
+							<p class="title">랜드로버 레인지로버 이보크 2.2 SD4 프레스티지 (*** 1234) /디젤</p>
+							<span class="status">
+								<span class="status01">상담가능</span>
+							</span>
+						</div>
+						<div class="info-box">
+							<div class="board-view">
+								<table>
+									<caption>선택 차량기본정보<caption>
+									<colgroup>
+										<col style="width:75px;">
+										<col style="*">
+										<col style="width:75px;">
+										<col style="*">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">연월식</th>
+											<td colspan="3">2016년 10월</td>
+										</tr>
+										<tr>
+											<th scope="row">색상</th>
+											<td>흰색</td>
+											<th scope="row">주행거리</th>
+											<td>102,265km</td>
+										</tr>
+										<tr>
+											<th scope="row">12개월</th>
+											<td>454,000</td>
+											<th scope="row">24개월</th>
+											<td>414,000</td>
+										</tr>
+										<tr>
+											<th scope="row">36개월</th>
+											<td>385,000</td>
+											<th scope="row">48개월</th>
+											<td>360,000</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</li>
+				</ul>
 			</div>
-			<div class="call-item">
-				<span class="title">단기렌트문의</span>
-				<a href="tel:1544-0445" class="btn-call">1544-0445</a>
-			</div>
-		</div>
-		<div class="foot-text">
-			<p>대표자: 장동현, 최태원  사업자등록번호: 107-85-50211</p>
-			<p>사업장 소재지: 서울특별시 영등포구  선유로43길 27, 3층(양평동3가)</p>
-			<p>Copyright © 에스케이(주) 엔카 All Rights Reserved</p>
 		</div>
 	</div>
 </div>
@@ -195,5 +262,21 @@
 
 <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../js/common.js"></script>
+<script>
+	$(window).load(function(){
+		$('.gray-bg-box button').click(function(){
+			$('.rentcar-result02').slideDown(200);
+		});
+
+		$('.result-list .item .goods-wrap').click(function(){
+			if($(this).parents('.item').hasClass('on')){
+				$(this).parents('li').removeClass('on').find('.info-box').slideUp(100);
+			}else{
+				$('.result-list .item').removeClass('on').find('.info-box').slideUp(100);
+				$(this).parents('li').addClass('on').find('.info-box').slideDown(200);
+			}
+		});
+	});
+</script>
 </body>
 </html>

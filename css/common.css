@@ -176,8 +176,7 @@ button {outline:0;vertical-align:top;}
 /* ============================================================================================
 	레이아웃
 ============================================================================================ */
-.wrapper {}
-.wrapper.bg-gray {background-color:#f4f4f4;}
+.bg-gray {background-color:#f4f4f4;}
 .header {
 	position: relative;
 	background-color:#fff;
@@ -192,7 +191,9 @@ button {outline:0;vertical-align:top;}
 	line-height: 50px;
 }
 .header .btn-search,
-.header .btn-prev {
+.header .btn-prev,
+.header .btn-close,
+.header .btn-menu {
 	position: absolute;
 	top:0;
 	width:50px;
@@ -211,6 +212,14 @@ button {outline:0;vertical-align:top;}
 .header .btn-search {
 	right:0;
 	background-position: 0 -52px;
+}
+.header .btn-close {
+	right:0;
+	background-position: 0 -102px;
+}
+.header .btn-menu {
+	left:0;
+	background-position: 0 153px;
 }
 .content {padding:0 15px 30px;}
 
@@ -1705,6 +1714,82 @@ select.styled1:disabled {
 	float:right;
 	width:168px;
 }
+
+.rentcar-result02 {
+	display: none;
+	padding-bottom:30px;
+	background-color:#fff;
+}
+.rentcar-result02 .result-text {
+	padding:0 10px;
+	color:#333;
+	font-size:14px;
+	line-height: 48px;
+}
+.rentcar-result02 .result-text .num {
+	color:#e9002d;
+}
+.rentcar-result02 .result-list {
+	border-top:1px solid #999;
+}
+.rentcar-result02 .result-list .item {
+	border-bottom:1px solid #ccc;
+}
+.rentcar-result02 .result-list .item .goods-wrap {
+	position: relative;
+	padding:10px 45px 14px 15px;
+}
+.rentcar-result02 .result-list .item .goods-wrap:before {
+	content: '';
+	position: absolute;
+	top:50%; right:15px;
+	width:12px; height:12px;
+	margin-top:-6px;
+	background:url(../img/icon/ico_open.png) right center no-repeat;
+	background-size:12px 12px;
+}
+.rentcar-result02 .result-list .item.on .goods-wrap:before {
+	background:url(../img/icon/ico_close.png) right center no-repeat;
+}
+.rentcar-result02 .result-list .item .title {
+	color:#666;
+	font-size:14px;
+	line-height: 20px;
+}
+.rentcar-result02 .result-list .item .status {
+	display: block;
+	margin-top: 7px;
+}
+.rentcar-result02 .result-list .item .status span {
+	display:inline-block;
+	width:70px;
+	height:24px;
+	font-size: 13px;
+	line-height: 22px;
+	text-align: center;
+	border-radius: 3px;
+	box-sizing: border-box;
+}
+.rentcar-result02 .result-list .item .status .status01 {
+	color:#fff;
+	background-color:#f58025;
+}
+.rentcar-result02 .result-list .item .status .status02 {
+	color:#fff;
+	background-color:#666;
+}
+.rentcar-result02 .result-list .item .status .status03 {
+	color:#333;
+	background-color:#fff;
+	border:1px solid #666;
+}
+
+.rentcar-result02 .result-list .item .info-box {
+	display: none;
+	padding:20px 15px;
+	border-top:1px solid #ccc;
+}
+
 /* 썸네일 리스트 */
 .thumb-list2 {}
 .thumb-list2 .thumb-item {

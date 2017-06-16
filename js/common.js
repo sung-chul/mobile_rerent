@@ -9,4 +9,9 @@ $(window).load(function(){
 			$(this).css({'position':'absolute', 'left':'0', 'right':'0', 'bottom':'0'});
 		}
 	});
+
+	/* 새창 닫기 버튼 */
+	$('.header .btn-close').click(function(){
+		window.close();
+	});
 });
