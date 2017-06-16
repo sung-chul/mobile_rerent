@@ -176,8 +176,7 @@ button {outline:0;vertical-align:top;}
 /* ============================================================================================
 	레이아웃
 ============================================================================================ */
-.wrapper {}
-.wrapper.bg-gray {background-color:#f4f4f4;}
+.bg-gray {background-color:#f4f4f4;}
 .header {
 	position: relative;
 	background-color:#fff;
@@ -192,7 +191,9 @@ button {outline:0;vertical-align:top;}
 	line-height: 50px;
 }
 .header .btn-search,
-.header .btn-prev {
+.header .btn-prev,
+.header .btn-close,
+.header .btn-menu {
 	position: absolute;
 	top:0;
 	width:50px;
@@ -211,6 +212,14 @@ button {outline:0;vertical-align:top;}
 .header .btn-search {
 	right:0;
 	background-position: 0 -52px;
+}
+.header .btn-close {
+	right:0;
+	background-position: 0 -102px;
+}
+.header .btn-menu {
+	left:0;
+	background-position: 0 153px;
 }
 .content {padding:0 15px 30px;}
 
@@ -1722,6 +1731,7 @@ select.styled1:disabled {
 .rentcar-result {
 	display:none;
 	padding:20px 0 0;
+	background-color:#fff;
 }
 .rentcar-result .sorting-area {
 	overflow:hidden;
@@ -1739,6 +1749,81 @@ select.styled1:disabled {
 	float:right;
 	width:168px;
 }
+
+.rentcar-result02 {
+	display: none;
+	padding-bottom:30px;
+	background-color:#fff;
+}
+.rentcar-result02 .result-text {
+	padding:0 10px;
+	color:#333;
+	font-size:14px;
+	line-height: 48px;
+	border-bottom:1px solid #999;
+}
+.rentcar-result02 .result-text .num {
+	color:#e9002d;
+}
+.rentcar-result02 .result-list {}
+.rentcar-result02 .result-list .item {
+	border-bottom:1px solid #ccc;
+}
+.rentcar-result02 .result-list .item .goods-wrap {
+	position: relative;
+	padding:10px 45px 14px 15px;
+}
+.rentcar-result02 .result-list .item .goods-wrap:before {
+	content: '';
+	position: absolute;
+	top:50%; right:15px;
+	width:12px; height:12px;
+	margin-top:-6px;
+	background:url(../img/icon/ico_open.png) right center no-repeat;
+	background-size:12px 12px;
+}
+.rentcar-result02 .result-list .item.on .goods-wrap:before {
+	background:url(../img/icon/ico_close.png) right center no-repeat;
+}
+.rentcar-result02 .result-list .item .title {
+	color:#666;
+	font-size:14px;
+	line-height: 20px;
+}
+.rentcar-result02 .result-list .item .status {
+	display: block;
+	margin-top: 7px;
+}
+.rentcar-result02 .result-list .item .status span {
+	display:inline-block;
+	width:70px;
+	height:24px;
+	font-size: 13px;
+	line-height: 22px;
+	text-align: center;
+	border-radius: 3px;
+	box-sizing: border-box;
+}
+.rentcar-result02 .result-list .item .status .status01 {
+	color:#fff;
+	background-color:#f58025;
+}
+.rentcar-result02 .result-list .item .status .status02 {
+	color:#fff;
+	background-color:#666;
+}
+.rentcar-result02 .result-list .item .status .status03 {
+	color:#333;
+	background-color:#fff;
+	border:1px solid #666;
+}
+
+.rentcar-result02 .result-list .item .info-box {
+	display: none;
+	padding:20px 15px;
+	border-top:1px solid #ccc;
+}
+
 /* 썸네일 리스트 */
 .thumb-list2 {background-color:#f4f4f4;}
 .thumb-list2 .thumb-item {
@@ -1869,8 +1954,90 @@ select.styled1:disabled {
 	line-height:22px;
 }
 
+.thumb-list3 {background-color:#f4f4f4;}
+.thumb-list3 .thumb-item {
+	margin-top:5px;
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	background-color:#fff;
+}
+.thumb-list3 .thumb-item:first-child {
+	margin-top:0;
+	border-top:0;
+}
+.thumb-list3 .thumb-item .link {display:block;}
+
+.thumb-list3 .thumb-cont {
+	position:relative;
+	min-height:97px;
+	padding:12px 15px 15px 170px;
+}
+@media only screen and (max-width:320px) {
+	.thumb-list3 .thumb-cont {
+		min-height: 83px;
+		padding-left:150px;
+	}
+}
+.thumb-list3 .thumb-item .goods-name {
+	color:#333;
+	font-size:14px;
+	line-height: 18px;
+}
+.thumb-list3 .thumb-item .img-area {
+	overflow:hidden;
+	position:absolute;
+	left:15px;top:15px;
+	width:145px;
+	height:97px;
+	font-size:0;
+	line-height:0;
+}
+@media only screen and (max-width:320px) {
+	.thumb-list3 .thumb-item .img-area {
+		width:125px; height:83px;
+	}
+}
+
+.thumb-list3 .thumb-item .img-area img {
+	width:100%;
+}
+.thumb-list3 .thumb-item .price-text {
+	position: absolute;
+	left:170px; bottom:15px;
+}
+@media only screen and (max-width:320px) {
+	.thumb-list3 .thumb-item .price-text {
+		left:150px;
+	}
+}
+.thumb-list3 .thumb-item .price-text .price {
+	font-size:16px;
+	color:#ea002c;
+}
+.thumb-list3 .thumb-item .price-text .month {
+	color:#333;
+	font-size:13px;
+}
+
+.thumb-img .item {
+	margin-top:5px;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+}
+.thumb-img .item:first-child {
+	margin-top:0;
+}
+.thumb-img .item .img-wrap {
+	display: block;
+}
+.thumb-img .item .img-wrap img {
+	width:100%;
+	vertical-align: top;
+}
+
 /* 결과없음 */
-.rentcar-result .no-result {
+.rentcar-result .no-result,
+.rentcar-result02 .no-result {
 	height:215px;
 	color:#999;
 	font-size:15px;
@@ -2206,9 +2373,193 @@ select.styled1:disabled {
 	right:5px; top:15px;
 }
 .accordion-list02 {}
-.accordion-list02 .item-accordion {}
-.accordion-list02 .item-accordion .question {}
-.accordion-list02 .item-accordion .question .title {}
-.accordion-list02 .item-accordion .answer {}
-.accordion-list02 .item-accordion .answer .answer-text {}
-.accordion-list02 .item-accordion .answer .answer-notice {}
+.accordion-list02 .item-accordion {
+	position:relative;
+}
+.accordion-list02 .item-accordion:before {
+	content:'';
+	display:block;
+	position:absolute;
+	right:15px; top:18px;
+	width:12px;
+	height:12px;
+	background:url(../img/icon/ico_open.png) no-repeat 0 0;
+	background-size:12px 12px;
+}
+.accordion-list02 .item-accordion.on:before {
+	content:'';
+	display:block;
+	position:absolute;
+	right:15px; top:18px;
+	width:12px;
+	height:12px;
+	background:url(../img/icon/ico_close.png) no-repeat 0 0;
+	background-size:12px 12px;
+}
+.accordion-list02 .item-accordion .question {
+	position:relative;
+	padding:15px 0;
+	border-bottom:1px solid #ddd;
+}
+.accordion-list02 .item-accordion .question .step-mark {
+	display:block;
+	position:absolute;
+	left:15px; top:15px;
+	width:39px;
+	height:18px;
+	background-color:#f58025;
+	border-radius:30px;
+	box-sizing:border-box;
+	font-size:13px;
+	color:#fff;
+	line-height:16px;
+	text-align:center;
+}
+.accordion-list02 .item-accordion .question .title {
+	padding:0 30px 0 60px;
+	font-size:14px;
+	color:#333;
+	line-height:17px;
+	letter-spacing:-1px;
+}
+.accordion-list02 .item-accordion .answer {
+	padding:12px 14px;
+	border-bottom:1px solid #ddd;
+}
+.accordion-list02 .item-accordion .answer .answer-text {
+	font-size:14px;
+	color:#666;
+	line-height:19px;
+}
+.accordion-list02 .item-accordion .answer .answer-notice {
+	margin-top:7px;
+	font-size:13px;
+	color:#999;
+	line-height:18px;
+}
+.accordion-list02 .item-accordion .answer .bullet-list02 .item {margin-top:5px;}
+/* ============================================================================================
+	error - 에러
+============================================================================================ */
+.error-area {
+	margin-top:59px;
+	padding-top:170px;
+	background:url(../img/img/error_404.png) no-repeat center 0;
+	background-size:146px 138px;
+	text-align:center;
+}
+.error-area .text01 {
+	font-size:15px;
+	color:#333;
+	line-height:20px;
+
+}
+.error-area .text02 {
+	margin-top:8px;
+	font-size:13px;
+	color:#666;
+	line-height:18px;
+}
+.error-area.type {
+	margin-top:140px;
+	padding:170px 15px 0;
+	background:url(../img/img/error_500.png) no-repeat center 0;
+	background-size:146px 138px;
+	text-align:center;
+}
+/* ============================================================================================
+	팝업
+============================================================================================ */
+.bg-layer {
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color:rgba(76, 76, 76, 0.7);
+	z-index:20;
+}
+.layer-popup {
+	position:fixed;
+    left:50%;
+    top:50%;
+    z-index:500;
+    -webkit-transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+    background-color:#fff;
+    box-sizing:border-box;
+    opacity:0;
+}
+.pop-head {
+	position:relative;
+	height:48px;
+	background-color:#f0f0f0;
+	border-bottom:1px solid #ccc;
+}
+.pop-head .pop-title {
+	font-size:17px;
+	color:#333;
+	line-height:48px;
+	font-family:'noto';
+	font-weight:600;
+	text-align:center;
+}
+.pop-head .btn-close {
+	position:absolute;
+	right:11px; top:50%;
+	width:15px;
+	height:15px;
+	margin-top:-7.5px;
+	background:url(../img/btn/pop_btn_close.png) no-repeat 0 0;
+	background-size:15px 15px;
+}
+.pop-content {padding-top:25px;}
+
+.manager-infor {
+	text-align:center;
+}
+.manager-infor .manager-img {
+	display:inline-block;
+	width:81px;
+	height:83px;
+}
+.manager-infor .manager-img img {width:100%; vertical-align:top;}
+.manager-infor .point-history,
+.manager-infor .name-text  {
+	font-size:15px;
+	color:#333;
+	line-height:20px;
+}
+.manager-infor .name-text {color:#666;}
+.contact-box {
+	overflow:hidden;
+	margin-top:22px;
+}
+.contact-box .btn-tele {
+	display:inline-block;
+	float:left;
+	width:50%;
+	height:51px;
+	padding-left:39px;
+	background-color:#e9002d;
+	font-size:16px;
+	color:#fff;
+	line-height:51px;
+	box-sizing: border-box;
+	letter-spacing:-1px;
+}
+.contact-box .btn-tele:first-child {background-color:#3b3b3b;}
+.contact-box .btn-tele:before {
+	content:'';
+	display:block;
+	position:absolute;
+	left:16px; top:50%;
+	width:14px;
+	height:14px;
+	margin-top:-7px;
+	background:url(../img/icon/icon_call02.png) no-repeat 0 0;
+	background-size:14px 14px;
+}
+.pop-agent {width:298px;}

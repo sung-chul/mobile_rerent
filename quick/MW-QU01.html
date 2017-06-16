@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
+<title>Re:Rent 렌터카의 답을 달다</title>
+<link rel="stylesheet" href="../css/common.css">
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="header">
+		<h2 class="page-title">최근 본 차량</h2>
+		<button type="button" class="btn-splite btn-close">닫기</button>
+	</div>
+
+	<div class="container">
+		<div class="content wide-cont">
+			<div class="thumb-list3">
+				<div class="thumb-item">
+					<a href="#" class="link">
+						<div class="thumb-cont">
+							<div class="goods-name ellipsis-line">기아 쏘렌토 R디젤 2.0 2WD TLX 최고급형</div>
+							<div class="img-area"><img src="../img/temp/temp_145.jpg" alt="자동차 이미지"></div>
+							<div class="price-text">
+								<span class="price">월 24만원</span>
+								<span class="month">(24개월/48개월)</span>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="thumb-item">
+					<a href="#" class="link">
+						<div class="thumb-cont">
+							<div class="goods-name ellipsis-line">기아 스포티지 4세대 디젤 2.0 WD 프레스티지</div>
+							<div class="img-area"><img src="../img/temp/temp_145.jpg" alt="자동차 이미지"></div>
+							<div class="price-text">
+								<span class="price">월 24만원</span>
+								<span class="month">24개월</span>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="thumb-item">
+					<a href="#" class="link">
+						<div class="thumb-cont">
+							<div class="goods-name ellipsis-line">기아 스포티지 4세대 디젤 2.0 WD 프레스티지</div>
+							<div class="img-area"><img src="../img/temp/temp_145.jpg" alt="자동차 이미지"></div>
+							<div class="price-text">
+								<span class="price">월 24만원</span>
+								<span class="month">24개월</span>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="thumb-item">
+					<a href="#" class="link">
+						<div class="thumb-cont">
+							<div class="goods-name ellipsis-line">기아 스포티지 4세대 디젤 2.0 WD 프레스티지</div>
+							<div class="img-area"><img src="../img/temp/temp_145.jpg" alt="자동차 이미지"></div>
+							<div class="price-text">
+								<span class="price">월 24만원</span>
+								<span class="month">24개월</span>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="thumb-item">
+					<a href="#" class="link">
+						<div class="thumb-cont">
+							<div class="goods-name ellipsis-line">기아 스포티지 4세대 디젤 2.0 WD 프레스티지</div>
+							<div class="img-area"><img src="../img/temp/temp_145.jpg" alt="자동차 이미지"></div>
+							<div class="price-text">
+								<span class="price">월 24만원</span>
+								<span class="month">24개월</span>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="thumb-item">
+					<a href="#" class="link">
+						<div class="thumb-cont">
+							<div class="goods-name ellipsis-line">기아 스포티지 4세대 디젤 2.0 WD 프레스티지</div>
+							<div class="img-area"><img src="../img/temp/temp_145.jpg" alt="자동차 이미지"></div>
+							<div class="price-text">
+								<span class="price">월 24만원</span>
+								<span class="month">24개월</span>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script>
+	$(window).load(function(){
+		$('.gray-bg-box button').click(function(){
+			$('.rentcar-result02').slideDown(200);
+		});
+
+		$('.result-list .item .goods-wrap').click(function(){
+			if($(this).parents('.item').hasClass('on')){
+				$(this).parents('li').removeClass('on').find('.info-box').slideUp(100);
+			}else{
+				$('.result-list .item').removeClass('on').find('.info-box').slideUp(100);
+				$(this).parents('li').addClass('on').find('.info-box').slideDown(200);
+			}
+		});
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko" class="bg-gray">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
+<title>Re:Rent 렌터카의 답을 달다</title>
+<link rel="stylesheet" href="../css/common.css">
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="header">
+		<h2 class="page-title">전체보기</h2>
+		<button type="button" class="btn-splite btn-close">닫기</button>
+	</div>
+
+	<div class="container">
+		<div class="content wide-cont">
+			<ul class="thumb-img">
+				<li class="item">
+					<a href="#">
+						<span class="img-wrap"><img src="../img/temp/temp_e01.jpg" alt="이벤트명"></span>
+					</a>
+				</li>
+				<li class="item">
+					<a href="#">
+						<span class="img-wrap"><img src="../img/temp/temp_e02.jpg" alt="이벤트명"></span>
+					</a>
+				</li>
+				<li class="item">
+					<a href="#">
+						<span class="img-wrap"><img src="../img/temp/temp_e03.jpg" alt="이벤트명"></span>
+					</a>
+				</li>
+				<li class="item">
+					<a href="#">
+						<span class="img-wrap"><img src="../img/temp/temp_e04.jpg" alt="이벤트명"></span>
+					</a>
+				</li>
+				<li class="item">
+					<a href="#">
+						<span class="img-wrap"><img src="../img/temp/temp_e05.jpg" alt="이벤트명"></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script>
+	$(window).load(function(){
+		$('.gray-bg-box button').click(function(){
+			$('.rentcar-result02').slideDown(200);
+		});
+
+		$('.result-list .item .goods-wrap').click(function(){
+			if($(this).parents('.item').hasClass('on')){
+				$(this).parents('li').removeClass('on').find('.info-box').slideUp(100);
+			}else{
+				$('.result-list .item').removeClass('on').find('.info-box').slideUp(100);
+				$(this).parents('li').addClass('on').find('.info-box').slideDown(200);
+			}
+		});
+	});
+</script>
+</body>
+</html>
