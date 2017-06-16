@@ -531,7 +531,7 @@ button {outline:0;vertical-align:top;}
 	padding:0 10px;
 	color:#666;
 	font-size:14px;
-	text-align:left;
+	text-align:center;
 	border-bottom:1px solid #ddd;
 	border-left:1px solid #ddd;
 }
@@ -2228,6 +2228,7 @@ select.styled1:disabled {
 }
 .office-info {
 	position:relative;
+	min-height:133px;
 }
 .office-info dt {
 	padding:16px 0;
