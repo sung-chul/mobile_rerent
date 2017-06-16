@@ -2423,6 +2423,7 @@ select.styled1:disabled {
 	letter-spacing:-1px;
 }
 .accordion-list02 .item-accordion .answer {
+	display: none;
 	padding:12px 14px;
 	border-bottom:1px solid #ddd;
 }
