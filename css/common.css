@@ -678,6 +678,29 @@ button {outline:0;vertical-align:top;}
 	background-color:#666;
 	color:#fff;
 }
+.icon-sprite {position:relative;}
+
+.btn-call02 {
+	display:inline-block;
+	height:25px;
+	padding:0 8px 0 25px;
+	color:#666;
+	font-size:13px;
+	line-height:23px;
+	border:1px solid #ccc;
+	border-radius:3px;
+}
+.btn-call02:before {
+	content:'';
+	position:absolute;
+	top:50%; left:10px;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:14px; height:14px;
+	background:url(../img/icon/icon_call.png) no-repeat 0 0;
+	background-size:14px 14px;
+}
 
 .social-login {
 	overflow: hidden;
@@ -1840,3 +1863,33 @@ select.styled1:disabled {
 	color:#666;
 	line-height:22px;
 }
+/* ============================================================================================
+	gu - 렌트가이드
+============================================================================================ */
+.pdf-link {
+    display:inline-block;
+    width:26px;
+    height:28px;
+    margin-left:5px;
+    background:url(../img/btn/btn_pdf.png) 0 0 no-repeat;
+	background-size:26px 28px;
+    font-size:0;
+    line-height:0;
+    vertical-align:middle;
+}
+
+.board-view table td.td-docu {
+	position:relative;
+	padding-right:30px;
+}
+.board-view table td.td-docu .pdf-link {
+	position:absolute;
+	right:5px; top:15px;
+}
+.accordion-list02 {}
+.accordion-list02 .item-accordion {}
+.accordion-list02 .item-accordion .question {}
+.accordion-list02 .item-accordion .question .title {}
+.accordion-list02 .item-accordion .answer {}
+.accordion-list02 .item-accordion .answer .answer-text {}
+.accordion-list02 .item-accordion .answer .answer-notice {}
