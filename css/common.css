@@ -2277,7 +2277,8 @@ select.styled1:disabled {
 }
 
 .goods-info .tab-cont {
-	padding:20px 15px;
+	margin:20px 0;
+	padding: 0 15px;
 }
 .option-lsit {
 	overflow: hidden;
@@ -2370,7 +2371,10 @@ select.styled1:disabled {
 	line-height: 22px;
 	word-break: keep-all;
 }
-
+.push-goods {
+	margin-top:25px;
+	padding:0 15px 30px;
+}
 /* --------------------------------------------------------------------------------------------
 	슬라이드
 -------------------------------------------------------------------------------------------- */
