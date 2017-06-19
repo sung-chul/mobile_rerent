@@ -30,6 +30,33 @@ $(window).load(function(){
 		});
 	});
 
+	/* 레이어 출력시 스크롤 방지  */
+	function scrollNo(){
+		var winTop = $(window).scrollTop();
+		$('html').addClass('no-scroll');
+		$('html').css({'top':-winTop}).attr('data', winTop);
+	}
+	function scrollOk(){
+		var winTop = $('html').attr('data');
+		$('html').removeClass('no-scroll').removeAttr('style');
+		$('body').scrollTop(winTop);
+	}
+
+	/* GNB */
+	$('.btn-gnb').click(function(){
+		$('.gnb-close').fadeIn(200);
+		$('.gnb-layer').show().stop().animate({left:0}, 200);
+		scrollNo();
+	});
+
+	$(document).on('click', '.btn-gnb-close, .gnb-close', function(){
+		$('.gnb-layer').stop().animate({left:-290}, 100, function(){
+			$(this).hide();
+			$('.gnb-close').fadeOut(100);
+		});
+		scrollOk();
+	});
+
 	/* ===========================================================================================================
 		레이어 팝업
 	=========================================================================================================== */
