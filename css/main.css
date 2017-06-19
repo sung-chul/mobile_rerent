@@ -49,6 +49,16 @@ html {background-color:#eaeaea;}
 	color:#333;
 }
 
+/* 추천 상품 */
+.recommend-box {
+	margin-top:10px;
+	background-color:#fff;
+	padding:0 15px;
+	box-shadow:0px 0px 10px #d3d3d3;
+}
+.recommend-box .thumb-list4 {margin-top:25px;}
+.recommend-box .btn-area {margin:0 -15px;}
+
 .event-box {
 	margin-top:10px;
 	padding-bottom:30px;

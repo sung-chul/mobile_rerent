@@ -507,6 +507,42 @@ button {outline:0;vertical-align:top;}
 	width:92px;
 }
 
+/* 탭 */
+.tab-list {
+	overflow:hidden;
+	border-top:1px solid #eee;
+	border-right:1px solid #eee;
+	background-color:#f7f7f7;
+}
+.tab-list .tab-item {
+	float:left;
+	width:50%;
+}
+.tab-list .tab-item .text {
+	display:block;
+	position:relative;
+	height:44px;
+	border-left:1px solid #eee;
+	border-bottom:1px solid #eee;
+	color:#aaa;
+	font-family:noto;
+	font-size:14px;
+	font-weight:600;
+	text-align:center;
+	line-height:44px;
+}
+@media only screen and (max-width:320px) {
+	.tab-list .tab-item .text {font-size:13px;}
+}
+.tab-list .tab-item.on .text {color:#ea002c;}/* on */
+.tab-list .tab-item.on .text:before {
+	content:'';
+	position:absolute;
+	left:0;right:0;top:0;bottom:0;
+	border:1px solid #ea002c;
+	z-index:5;
+}/* on */
+
 /* --------------------------------------------------------------------------------------------
 	테이블
 -------------------------------------------------------------------------------------------- */
@@ -2035,15 +2071,75 @@ select.styled1:disabled {
 	border-top:1px solid #ccc;
 	border-bottom:1px solid #ccc;
 }
-.thumb-img .item:first-child {
-	margin-top:0;
-}
-.thumb-img .item .img-wrap {
-	display: block;
-}
+.thumb-img .item:first-child {margin-top:0;}
+.thumb-img .item .img-wrap {display: block;}
 .thumb-img .item .img-wrap img {
 	width:100%;
 	vertical-align: top;
+}
+
+.thumb-list4 {
+	overflow:hidden;
+	margin:0 -4px;
+}
+.thumb-list4 .thumb-item {
+	float:left;
+	width:50%;
+	padding:0 4px;
+	box-sizing:border-box;
+}
+.thumb-list4 .thumb-item .img-area {
+	font-size:0;
+	line-height:0;
+}
+.thumb-list4 .thumb-item .img-area img {
+	width:100%;
+}
+.thumb-list4 .thumb-item .text-area {
+	height:86px;
+	margin-top:6px;
+}
+.thumb-list4 .thumb-item .text-area .title {
+	display:-webkit-box;
+	overflow:hidden;
+	width:100%;
+	height:36px;
+	color:#666;
+	font-family:noto;
+	font-size:13px;
+	font-weight:600;
+	text-overflow:ellipsis;
+	line-height:18px;
+	word-break:webkit-box;
+	-webkit-line-clamp:2;
+	-webkit-box-orient:vertical;
+	word-wrap:break-word;
+}
+.thumb-list4 .thumb-item .text-area .price-month {
+	overflow:hidden;
+	font-family:noto;
+	line-height:22px;
+}
+.thumb-list4 .thumb-item .text-area .price-month .price {
+	float:left;
+	color:#ea002c;
+	font-size:16px;
+}
+.thumb-list4 .thumb-item .text-area .price-month .month {
+	float:left;
+	color:#333;
+	font-size:13px;
+}
+
+.btn-thumb-more {
+	width:100%;
+	height:50px;
+	border-top:1px solid #dcdcdc;
+	color:#999;
+	font-family:noto;
+	font-size:13px;
+	text-align:center;
+	line-height:50px;
 }
 
 /* 결과없음 */
