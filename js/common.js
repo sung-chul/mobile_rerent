@@ -24,6 +24,8 @@ $(window).load(function(){
 	$('.img-slide .swiper-container').each(function(){
 		var swiper = new Swiper(this, {
 			pagination: '.img-slide .swiper-pagination',
+			nextButton: '.img-slide .btn-next',
+			prevButton: '.img-slide .btn-prev',
 			paginationType: 'fraction'
 		});
 	});
