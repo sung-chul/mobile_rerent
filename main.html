@@ -227,11 +227,20 @@
 <script type="text/javascript" src="js/swiper.min.js"></script><!-- 슬라이드 -->
 <script type="text/javascript" src="js/common.js"></script>
 <script>
-var swiper = new Swiper('.vertical-slide .swiper-container', {
-	direction: 'vertical',
-	loop: true,
-	noSwipingClass: 'vertical-slide',
-	autoplay: '4000'
+$(window).load(function(){
+	// 알림 슬라이드
+	var swiper = new Swiper('.vertical-slide .swiper-container', {
+		direction: 'vertical',
+		loop: true,
+		noSwipingClass: 'vertical-slide',
+		autoplay: '4000'
+	});
+
+	// 추천상품 소팅
+	$('.tab-item').click(function(){
+		$('.tab-item').removeClass('on');
+		$(this).addClass('on');
+	});
 });
 </script>
 </body>
