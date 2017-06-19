@@ -2045,6 +2045,33 @@ select.styled1:disabled {
 	line-height:215px;
 }
 
+/* 상세화면 */
+.car-info-list {
+	padding:15px;
+}
+.car-info-item {
+	overflow:hidden;
+	color:#666;
+	font-size:14px;
+	line-height:30px;
+}
+.car-info-item .title {
+	float:left;
+}
+.car-info-item .text {
+	float:right;
+}
+.car-info-item .text .red,
+.car-info-item .text .orange {
+	display:inline-block;
+	font-size:20px;
+	line-height:28px;
+	vertical-align:top;
+}
+.car-info-item .text .red {color:#e9002d;}
+.car-info-item .text .orange {color:#f58025;}
+.car-info-item {}
+
 /* --------------------------------------------------------------------------------------------
 	슬라이드
 -------------------------------------------------------------------------------------------- */
