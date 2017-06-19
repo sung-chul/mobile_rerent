@@ -48,3 +48,9 @@ html {background-color:#eaeaea;}
 	margin-right:7px;
 	color:#333;
 }
+
+.event-box {
+	margin-top:10px;
+	padding-bottom:30px;
+	background-color:#fff;
+}

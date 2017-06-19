@@ -443,6 +443,16 @@ button {outline:0;vertical-align:top;}
 	text-align:center;
 	line-height:46px;
 }
+.cTitle03 {
+	height:45px;
+	background-color:#fff;
+	color:#333;
+	font-family:noto;
+	font-size:15px;
+	font-weight:600;
+	text-align:center;
+	line-height:45px;
+}
 
 /* 스텝 */
 .step-wrap {margin-bottom:26px;}
@@ -2129,6 +2139,7 @@ select.styled1:disabled {
 	-webkit-flex-direction:column;
 	flex-direction:column;
 }
+
 /* 이미지 슬라이드 01 */
 .img-slide {
 	position:relative;
@@ -2216,6 +2227,21 @@ select.styled1:disabled {
 	background-image:url(../img/btn/btn_next.png);
 }
 .img-slide .swiper-button-disabled {display:none;}
+
+.img-slide .swiper-pagination.styled2 {
+	position:absolute;
+	right:15px;bottom:15px;
+	z-index:5;
+	width:53px;
+	height:27px;
+	border-radius:25px;
+	background-color:rgba(0,0,0,.5);
+	color:#fff;
+	font-family:noto;
+	font-size:13px;
+	text-align:center;
+	line-height:27px;
+}
 
 /* ============================================================================================
 	지점안내
