@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+html {background-color:#eaeaea;}
+
+/* 해더 */
+.header .page-title {
+	height:50px;
+	background:url(../img/text_logo.png) no-repeat 50% 50%;
+	background-size:77px 22px;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.header .btn-gnb {
+	position:absolute;
+	left:0;top:0;bottom:0;
+	width:50px;
+	background:url(../img/btn/btn_gnb.png) no-repeat 50% 50%;
+	background-size:21px 14px;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+
+/* 공지사항 슬라이드 */
+.vertical-slide {box-shadow:0px 0px 10px #d3d3d3;}
+.vertical-slide .swiper-container {
+	overflow:hidden;
+	height:36px;
+	background-color:#fff;
+}
+.vertical-slide .swiper-slide {}
+.vertical-slide .swiper-slide .link {
+	display:block;
+	overflow:hidden;
+	width:100%;
+	padding:0 15px;
+	box-sizing:border-box;
+	color:#767676;
+	font-family:noto;
+	font-weight:600;
+	font-size:13px;
+	text-overflow:ellipsis;
+	line-height:36px;
+	white-space:nowrap;
+}
+.vertical-slide .swiper-slide .link .value {
+	margin-right:7px;
+	color:#333;
+}

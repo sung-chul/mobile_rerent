@@ -179,6 +179,7 @@ button {outline:0;vertical-align:top;}
 .bg-gray {background-color:#f4f4f4;}
 .header {
 	position: relative;
+	min-height:50px;
 	background-color:#fff;
 	border-bottom:1px solid #d5d5d5;
 }
@@ -2188,6 +2189,33 @@ select.styled1:disabled {
 	width:1px;
 	height:14px;
 }
+
+.img-slide .btn-prev,
+.img-slide .btn-next {
+	position:absolute;
+	top:50%;
+	z-index:5;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:21px;
+	height:32px;
+	background-repeat:no-repeat;
+	background-position:0 0;
+	background-size:21px 32px;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.img-slide .btn-prev {
+	left:15px;
+	background-image:url(../img/btn/btn_prev.png);
+}
+.img-slide .btn-next {
+	right:15px;
+	background-image:url(../img/btn/btn_next.png);
+}
+.img-slide .swiper-button-disabled {display:none;}
 
 /* ============================================================================================
 	지점안내
