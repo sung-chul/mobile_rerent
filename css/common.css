@@ -548,6 +548,45 @@ button {outline:0;vertical-align:top;}
 }
 
 /* --------------------------------------------------------------------------------------------
+	테이블
+-------------------------------------------------------------------------------------------- */
+.tab-styled1 {
+	overflow: hidden;
+	background-color:#f4f4f4;
+	border-top:1px solid #ccc;
+}
+.tab-styled1 .item {
+	float: left;
+	width:33%;
+	text-align: center;
+	border-bottom:1px solid #e5e5e5;
+}
+.tab-styled1 .item:first-child {
+	width:34%;
+}
+.tab-styled1 .item span {
+	position: relative;
+	display:block;
+	color:#666;
+	font-size:15px;
+	line-height: 50px;
+}
+.tab-styled1 .item.on span {
+	color:#e9002d;
+	font-weight: bold;
+}
+.tab-styled1 .item.on span:before {
+	content: '';
+	position: absolute;
+	left:0; right:0; bottom:-1px;
+	width:100%; height:2px;
+	background-color:#e9002d;
+}
+
+.tab-cont {display:none;}
+.tab-cont.on {display:block;}
+
+/* --------------------------------------------------------------------------------------------
 	리스트
 -------------------------------------------------------------------------------------------- */
 .bullet-list01 {}
@@ -1632,8 +1671,6 @@ select.styled1:disabled {
 	font-weight: bold;
 }
 
-.tab-cont {display:none;}
-.tab-cont.on {display:block;}
 .accordion-list {}
 .accordion-list .item-accordion {
 	position:relative;
@@ -2071,6 +2108,161 @@ select.styled1:disabled {
 .car-info-item .text .red {color:#e9002d;}
 .car-info-item .text .orange {color:#f58025;}
 .car-info-item {}
+
+.spec-box {
+	padding:18px 15px;
+	background-color:#f4f4f4
+}
+.spec-box .row {
+	text-align: center;
+	margin-top:2px;
+}
+.spec-box .row:first-child {
+	margin-top:0;
+}
+.spec-box .row span {
+	position: relative;
+	display: inline-block;
+	margin-left:11px;
+	padding-left:16px;
+	color:#999;
+	font-size:14px;
+	line-height: 19px;
+	vertical-align: top;
+}
+.spec-box .row span:first-child {
+	margin-left:0;
+	padding-left:0;
+}
+.spec-box .row span:before {
+	content: '';
+	position: absolute;
+	top:50%; left:0;
+	width:1px; height:14px;
+	margin-top:-7px;
+	background-color:#ddd;
+}
+.spec-box .row span:first-child:before {
+	display: none;
+}
+.spec-box .btn-wrap {
+	margin-top:20px;
+	padding:0 20px;
+}
+
+.call-center {
+	padding:16px 0;
+	text-align: center;
+}
+.call-center dt {
+	margin-bottom:10px;
+	color:#666;
+	font-size:15px;
+	line-height: 20px;
+}
+.call-center dd span {
+	padding-left:32px;
+	color:#333;
+	font-size:20px;
+	line-height: 23px;
+	background:url(../img/icon/icon_call03.png) left center no-repeat;
+	background-size:22px 23px;
+}
+
+.goods-info .tab-cont {
+	padding:20px 15px;
+}
+.option-lsit {
+	overflow: hidden;
+}
+.option-lsit li {
+	position:relative;
+	float:left;
+	width:25%;
+	margin-bottom:20px;
+	padding-top:75px;
+	text-align: center;
+}
+.option-lsit li:before {
+	content: '';
+	position: absolute;
+	top:0; left:0;
+	width:65px; height:65px;
+	background-image:url(../img/icon/icon_option.png);
+	background-repeat: no-repeat;
+	background-size:520px 130px;
+}
+.option-lsit .item01:before {background-position: 0 0;}
+.option-lsit .item02:before {background-position: -65px 0;}
+.option-lsit .item03:before {background-position: -130px 0;}
+.option-lsit .item04:before {background-position: -195px 0;}
+.option-lsit .item05:before {background-position: -260px 0;}
+.option-lsit .item06:before {background-position: -325px 0;}
+.option-lsit .item07:before {background-position: -390px 0;}
+.option-lsit .item08:before {background-position: -455px 0;}
+
+.option-lsit.on .item01:before {background-position: 0 -65px;}
+.option-lsit.on .item02:before {background-position: -65px -65px;}
+.option-lsit.on .item03:before {background-position: -130px -65px;}
+.option-lsit.on .item04:before {background-position: -195px -65px;}
+.option-lsit.on .item05:before {background-position: -260px -65px;}
+.option-lsit.on .item06:before {background-position: -325px -65px;}
+.option-lsit.on .item07:before {background-position: -390px -65px;}
+.option-lsit.on .item08:before {background-position: -455px -65px;}
+
+.option-lsit li span {
+	color:#666;
+	font-size:14px;
+}
+
+.option-table {
+	display: none;
+	margin-top:30px;
+}
+.option-text {
+	word-break: keep-all;
+}
+.option-area .add-option {
+	margin-top:20px;
+}
+.option-area .add-option span {
+	position: relative;
+	display: inline-block;
+	padding-right:22px;
+}
+.option-area .add-option span:before {
+	content: '';
+	position: absolute;
+	right:0; top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:13px; height: 1px;
+	background-color:#fff;
+}
+.option-area .add-option span:after {
+	content: '';
+	position: absolute;
+	right:1px; top:50%;
+	-webkit-transform: rotate(90deg) translateY(-50%);
+	-ms-transform: rotate(90deg) translateY(-50%);
+	transform: rotate(90deg) translateY(-50%);
+	width:12px; height: 1px;
+	background-color:#fff;
+}
+.option-area.on .add-option span:after{
+	display: none;
+}
+.goods-notice {
+	padding-bottom: 20px;
+	border-bottom:1px solid #999;
+}
+.goods-notice p {
+	color:#666;
+	font-size:14px;
+	line-height: 22px;
+	word-break: keep-all;
+}
 
 /* --------------------------------------------------------------------------------------------
 	슬라이드
