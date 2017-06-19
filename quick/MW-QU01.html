@@ -98,21 +98,5 @@
 
 <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../js/common.js"></script>
-<script>
-	$(window).load(function(){
-		$('.gray-bg-box button').click(function(){
-			$('.rentcar-result02').slideDown(200);
-		});
-
-		$('.result-list .item .goods-wrap').click(function(){
-			if($(this).parents('.item').hasClass('on')){
-				$(this).parents('li').removeClass('on').find('.info-box').slideUp(100);
-			}else{
-				$('.result-list .item').removeClass('on').find('.info-box').slideUp(100);
-				$(this).parents('li').addClass('on').find('.info-box').slideDown(200);
-			}
-		});
-	});
-</script>
 </body>
 </html>
