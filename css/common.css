@@ -622,7 +622,11 @@ html.no-scroll {
 }
 
 /* 스텝 */
-.step-wrap {margin-bottom:26px;}
+.step-wrap {
+	overflow:hidden;
+	width:100%;
+	margin-bottom:26px;
+}
 .step-area {
 	overflow: hidden;
 	margin-right:-2px;
