@@ -2732,7 +2732,7 @@ select.styled1:disabled {
 	border:1px solid #cfcfcf;
 	border-radius:3px;
 	background:#fff url(../img/icon/ico_tel.png) no-repeat center center;
-	background-size:19px 19px;
+	background-size:19px 18px;
 	box-sizing:border-box;
 }
 .guid-box dl dd {
@@ -2754,7 +2754,7 @@ select.styled1:disabled {
 }
 .guid-box dl dd .guid-list .item.guid02 {
 	background:url(../img/icon/ico_guid02.gif) no-repeat 0 5px;
-	background-size:9px 13px;
+	background-size:10px 13px;
 }
 .guid-box dl dd .guid-list .item.guid03 {
 	background:url(../img/icon/ico_guid03.gif) no-repeat 0 5px;
@@ -2790,7 +2790,7 @@ select.styled1:disabled {
 }
 .office-info .add-box .add-list .item-add.add02 {
 	background:url(../img/icon/ico_guid02.gif) no-repeat 0 5px;
-	background-size:9px 13px;
+	background-size:10px 13px;
 }
 .office-info .img-wrap {
 	position:absolute;
@@ -2812,7 +2812,7 @@ select.styled1:disabled {
 	border: 1px solid #cfcfcf;
 	border-radius: 3px;
 	background:url(../img/icon/ico_map.png) center center no-repeat;
-	background-size:14px 19px;
+	background-size:15px 20px;
 }
 .office-info .contact-us .btn-call {
 	display:inline-block;
@@ -2820,7 +2820,7 @@ select.styled1:disabled {
 	border: 1px solid #cfcfcf;
 	border-radius: 3px;
 	background:url(../img/icon/ico_tel.png) center center no-repeat;
-	background-size:19px 19px;
+	background-size:19px 18px;
 }
 
 
@@ -2970,13 +2970,16 @@ select.styled1:disabled {
 	left:15px; top:15px;
 	width:39px;
 	height:18px;
-	background-color:#f58025;
+	background-color:#999;
 	border-radius:30px;
 	box-sizing:border-box;
 	font-size:13px;
 	color:#fff;
 	line-height:16px;
 	text-align:center;
+}
+.accordion-list02 .item-accordion.on .question .step-mark {
+	background-color:#f58025;
 }
 .accordion-list02 .item-accordion .question .title {
 	padding:0 30px 0 60px;
