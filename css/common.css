@@ -1617,7 +1617,10 @@ select.styled1:disabled {
 ============================================================================================ */
 .event-area {}
 .thumb-list {margin-top:15px;}
-.thumb-list .thumb-item {margin-top:15px;}
+.thumb-list .thumb-item {
+	margin-top:15px;
+	border:1px solid #dfdfdf;
+}
 .thumb-list .thumb-item:first-child {margin-top:0;}
 .thumb-list .thumb-item .img-area img {
 	width:100%;
@@ -1626,9 +1629,7 @@ select.styled1:disabled {
 }
 .thumb-list .thumb-item .text-area {
 	padding:12px;
-	border:1px solid #dfdfdf;
 	background-color:#fff;
-	border-top:0;
 	box-sizing:border-box;
 }
 .thumb-list .thumb-item .text-area .text01 {
@@ -2832,6 +2833,28 @@ select.styled1:disabled {
 ============================================================================================ */
 /* 이용약관 */
 .terms-area {margin-top:25px;}
+.terms-area .title-list {
+	margin-top:20px;
+	padding:10px;
+	border:1px solid #ccc;
+}
+.terms-area .title-list li {
+	position: relative;
+	margin-top:5px;
+	padding-left:20px;
+	font-size: 14px;
+	line-height: 19px;
+}
+.terms-area .title-list li:first-child {
+	margin-top:0;
+}
+.terms-area .title-list li span {
+	position: absolute;
+	top:0; left:0;
+	width: 20px;
+	line-height: 19px;
+	text-align: center;
+}
 .terms-area .info-title  {
 	margin-top:15px;
 	padding:7px 0;
