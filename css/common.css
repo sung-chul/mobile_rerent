@@ -699,7 +699,7 @@ html.no-scroll {
 	line-height:44px;
 }
 @media only screen and (max-width:320px) {
-	.tab-list .tab-item .text {font-size:13px;}
+	.tab-list .tab-item .text {font-size:12px;}
 }
 .tab-list .tab-item.on .text {color:#ea002c;}/* on */
 .tab-list .tab-item.on .text:before {

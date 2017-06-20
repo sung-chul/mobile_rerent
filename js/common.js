@@ -43,12 +43,14 @@ $(window).load(function(){
 	}
 
 	/* GNB */
+	// 열기
 	$('.btn-gnb').click(function(){
 		$('.gnb-close').fadeIn(200);
 		$('.gnb-layer').show().stop().animate({left:0}, 200);
 		scrollNo();
 	});
 
+	// 닫기
 	$(document).on('click', '.btn-gnb-close, .gnb-close', function(){
 		$('.gnb-layer').stop().animate({left:-290}, 100, function(){
 			$(this).hide();
