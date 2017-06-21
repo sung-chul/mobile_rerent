@@ -35,7 +35,7 @@
 				</div>
 				<div class="tab-cont on">
 					<ul class="accordion-list">
-						<li class="item-accordion">
+						<li class="item-accordion on">
 							<div class="question">
 								<p class="title">자동차 장기렌트는 무엇인가요?</p>
 							</div>
@@ -280,17 +280,34 @@ $(window).load(function(){
 		$('.tab-cont').removeClass('on').eq(idx).addClass('on');
 	});
 
-	/*아코디언*/
-	$('.accordion-list li:first-child').addClass('on').find('.answer').show();
+	function footer(){
+		var contH = $('.container').outerHeight()
+		var htmlH = $(window).height() - $('.header').outerHeight() - $('.footer').outerHeight();
+		if(contH > htmlH){
+			$('.footer').css({'position':'inherit'});
+		}else{
+			$('.footer').css({'position':'absolute'});
+		}
+		//console.log(contH, htmlH);
+	}
 
+	/*아코디언*/
 	$('.accordion-list .question').click(function(){
 		if($(this).parents('li').hasClass('on')){
-			$(this).parents('li').removeClass('on').find('.answer').slideUp(100);
+			$(this).parents('li').removeClass('on').find('.answer').slideUp(100, function(){
+				footer();
+			});
 		}else{
-			$('.accordion-list .question').parents('li').removeClass('on').find('.answer').slideUp(100);
-			$(this).parents('li').addClass('on').find('.answer').slideDown(200);
+			$('.accordion-list .question').parents('li').removeClass('on').find('.answer').slideUp(100, function(){
+				footer();
+			});
+			$(this).parents('li').addClass('on').find('.answer').slideDown(200, function(){
+				footer();
+			});
 		}
 	});
+	$('.accordion-list .item-accordion:first-child .answer').show();
+	footer();
 });
 </script>
 </body>
