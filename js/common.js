@@ -86,4 +86,20 @@ $(window).load(function(){
 		$('.popup-close').remove();
 		$('body').css({'overflow-y':'inherit'});
 	});
+
+	var scrolling = 0;
+	$(window).scroll(function(){
+		var winTop = $(this).scrollTop();
+
+		/* top 버튼 */
+		if(winTop > 0){
+			$('.btn-top').show();
+		}else{
+			$('.btn-top').hide();
+		}
+	});
+
+	$('.floating-btn-area .btn-top').click(function(){
+		$('html, body').animate({scrollTop: 0},200);
+	});
 });

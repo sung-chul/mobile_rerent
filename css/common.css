@@ -452,6 +452,62 @@ html.no-scroll {
 }
 
 /* --------------------------------------------------------------------------------------------
+	플로팅 버튼
+-------------------------------------------------------------------------------------------- */
+.floating-btn-area {
+	position:fixed;
+	left:0;right:0;bottom:0;
+	z-index:100;
+	-webkit-transition:all .2s;
+	-ms-transition:all .2s;
+	transition:all .2s;
+}
+html.down .floating-btn-area {bottom:0;}/* scroll down */
+.floating-btn-area .btn {
+	display: block;
+	width:42px;
+	height:42px;
+
+}
+.floating-btn-area .btn-agent {
+	background:url(../img/btn/btn_quick01.png) 0 0 no-repeat;
+	background-size: 42px 42px;
+}
+.floating-btn-area .btn-view {
+	background:url(../img/btn/btn_quick02.png) 0 0 no-repeat;
+	background-size: 42px 42px;
+}
+.floating-btn-area .btn-simulation {
+	background:url(../img/btn/btn_quick03.png) 0 0 no-repeat;
+	background-size: 42px 42px;
+}
+.floating-btn-area .btn-top {
+	display: none;
+	position:relative;
+	width:42px;
+	height:39px;
+	padding-top:18px;
+	background:url(../img/btn/btn_top.png) 0 0 no-repeat;
+	background-size: 42px 39px;
+}
+.floating-btn-area .btn-prev {
+	position:absolute;
+	left:15px;bottom:15px;
+	width:39px;
+	height:39px;
+	background:url(../img/btn/btn_prev_page.png) 0 0 no-repeat;
+	background-size:39px 39px;
+}
+.floating-btn-area .right-area {
+	position:absolute;
+	right:15px;bottom:15px;
+	width:42px;
+}
+.floating-btn-area .right-area .btn {
+	margin-top:9px;
+}
+
+/* --------------------------------------------------------------------------------------------
 	슬라이드
 -------------------------------------------------------------------------------------------- */
 .swiper-container {
