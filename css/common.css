@@ -293,7 +293,7 @@ html.no-scroll {
 	font-family:noto;
 	font-size:14px;
 	font-weight:600;
-	line-height:50px;
+	line-height:52px;
 }
 .gnb-layer .util .link:before {
 	content:'';
@@ -351,12 +351,13 @@ html.no-scroll {
 	border-bottom:1px solid #d5d5d5;
 }
 .header .page-title {
+	height: 50px;
 	color:#333;
 	font-size:20px;
 	font-family:'noto';
 	font-weight: 600;
 	text-align: center;
-	line-height: 50px;
+	line-height: 52px;
 }
 .header .btn-search,
 .header .btn-prev,
@@ -914,19 +915,26 @@ html.no-scroll {
 	font-size:16px;
 	line-height:50px;
 }
-
+.btn-h50.btn-text-line1,
+.btn-h50.btn-text-line2 {
+	line-height: 48px;
+}
 .btn-h45 {
 	height:45px;
 	font-size:14px;
 	line-height:45px;
 }
-
+.btn-h45.btn-text-line1,
+.btn-h45.btn-text-line2 {
+	line-height: 43px;
+}
 /* 버튼 컬러 */
 /* line */
 .btn-text-line1 {
 	background-color:#fff;
 	color:#333;
 	border:1px solid #666;
+
 }
 .btn-text-line2 {
 	background-color:#fff;
@@ -1164,6 +1172,7 @@ select.styled1 {
 	background-size:28px 11px;
 	color:#999;
 	font-size:14px;
+	line-height: 43px;
 	text-align:left;
 	text-transform:none;
 	vertical-align:middle;
@@ -1177,7 +1186,6 @@ select.styled1 {
 	appearance:none;
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
-	box-sizing:border-box;
 }
 select.styled1:disabled {
 	background-color:#eee;
@@ -2465,8 +2473,9 @@ select.styled1:disabled {
 .option-lsit li:before {
 	content: '';
 	position: absolute;
-	top:0; left:0;
+	top:0; left:0; right:0;
 	width:65px; height:65px;
+	margin:0 auto;
 	background-image:url(../img/icon/icon_option.png);
 	background-repeat: no-repeat;
 	background-size:520px 130px;
@@ -2933,11 +2942,14 @@ select.styled1:disabled {
 
 .board-view table td.td-docu {
 	position:relative;
-	padding-right:30px;
+	padding-right:40px;
 }
 .board-view table td.td-docu .pdf-link {
 	position:absolute;
-	right:5px; top:15px;
+	right:5px; top:50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
 .accordion-list02 {}
 .accordion-list02 .item-accordion {
@@ -3069,10 +3081,11 @@ select.styled1:disabled {
 	background-color:#f0f0f0;
 	border-bottom:1px solid #ccc;
 }
-.pop-head .pop-title {
+.pop-head .pop-title {+
+	height: 48px;
 	font-size:17px;
 	color:#333;
-	line-height:48px;
+	line-height:50px;
 	font-family:'noto';
 	font-weight:600;
 	text-align:center;
