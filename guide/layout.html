@@ -96,17 +96,46 @@
 		<!-- //메인에선 이전버튼 주석처리 -->
 		<div class="right-area">
 			<!-- 에이젼트 접속시 보여줌 -->
-			<a href="#" class="btn btn-agent"><span class="hide">에이젼트</span></a>
+			<a href="#none" class="btn btn-agent"><span class="hide">에이젼트</span></a>
 			<!-- //에이젼트 접속시 보여줌 -->
-			<a href="#" class="btn btn-view"><span class="hide">최근 본 차량</span></a>
-			<a href="#" class="btn btn-simulation"><span class="hide">견적 시뮬레이션</span></a>
+			<a href="../quick/MW-QU01.html" target="_blank" class="btn btn-view"><span class="hide">최근 본 차량</span></a>
+			<a href="../qu/MW-QU20101.html" class="btn btn-simulation"><span class="hide">견적 시뮬레이션</span></a>
 			<button type="button" class="btn btn-top"><span class="hide">TOP</span></button>
 		</div>
 	</div>
 </div>
 
+<!-- 레이어 팝업 영역 -->
+<div class="bg-layer"></div>
+<!-- 장기렌트 담당자 -->
+<div class="layer-popup pop-agent">
+	<div class="pop-head">
+		<h1 class="pop-title">장기렌트 담당자</h1>
+		<button type="button" class="btn-close"><span class="hide">닫기</span></button>
+	</div>
+	<div class="pop-content">
+		<div class="manager-infor">
+			<span class="manager-img"><img src="../img/temp/manager_photo.gif" alt=""></span>
+			<p class="point-history mgT10">안양직영점</p>
+			<p class="name-text"><span class="tit">담당자</span> 홍길동</p>
+		</div>
+		<div class="contact-box">
+			<a href="tel:02-1234-4567" class="btn-tele icon-sprite">02-1234-4567</a>
+			<a href="tel:010-1234-4567" class="btn-tele icon-sprite">010-1234-4567</a>
+		</div>
+	</div>
+</div>
 
 <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../js/common.js"></script>
+<script>
+$(window).load(function(){
+	/* 장기렌트 담당자 */
+	$('.btn-agent').click(function(){
+		$('.bg-layer').fadeIn(200);
+		$('.pop-agent').fadeIn(200);
+	});
+});
+</script>
 </body>
 </html>
