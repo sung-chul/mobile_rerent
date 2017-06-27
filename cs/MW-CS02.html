@@ -45,11 +45,6 @@
 								<div class="attach-box">
 									<label for="img-upload01">
 										<img src="../img/bg/bg_attach.jpg" alt="">
-										<video width="100%" controls preload="auto">
-											<source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-											<source src="#" type='video/ogg; codecs="theora, vorbis"'>
-											<source src="#" type='video/webm; codecs="vp8, vorbis"'>
-										</video>
 									</label>
 									<input type="file" id="img-upload01" class="inp-file">
 									<button type="button" class="btn-delete"><span class="hide">삭제</span></button>
@@ -59,11 +54,6 @@
 								<div class="attach-box">
 									<label for="img-upload01">
 										<img src="../img/bg/bg_attach.jpg" alt="">
-										<video width="100%" controls preload="auto">
-											<source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-											<source src="#" type='video/ogg; codecs="theora, vorbis"'>
-											<source src="#" type='video/webm; codecs="vp8, vorbis"'>
-										</video>
 									</label>
 									<input type="file" id="img-upload01" class="inp-file">
 									<button type="button" class="btn-delete"><span class="hide">삭제</span></button>
@@ -73,11 +63,6 @@
 								<div class="attach-box">
 									<label for="img-upload01">
 										<img src="../img/bg/bg_attach.jpg" alt="">
-										<video width="100%" controls preload="auto">
-											<source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-											<source src="#" type='video/ogg; codecs="theora, vorbis"'>
-											<source src="#" type='video/webm; codecs="vp8, vorbis"'>
-										</video>
 									</label>
 									<input type="file" id="img-upload01" class="inp-file">
 									<button type="button" class="btn-delete"><span class="hide">삭제</span></button>
@@ -134,27 +119,14 @@
 			ext = $(this).val().split('.').pop().toLowerCase(); //확장자
 
 			//배열에 추출한 확장자가 존재하는지 체크
-			if($.inArray(ext, ['mp4', 'gif', 'png', 'jpg', 'jpeg']) == -1) {
+			if($.inArray(ext, ['gif', 'png', 'jpg', 'jpeg']) == -1) {
 				resetFormElement($(this)); //폼 초기화
 				window.alert('이미지 파일이 아닙니다! (gif, png, jpg, jpeg 만 업로드 가능)');
-			} else if ($.inArray(ext, ['mp4', 'gif', 'png', 'jpg', 'jpeg']))
+			} else if ($.inArray(ext, ['gif', 'png', 'jpg', 'jpeg']))
 			{
 				file = $(this).prop("files")[0];
 				blobURL = window.URL.createObjectURL(file);
 				$(this).parents('.attach-box').find('img').attr('src', blobURL);
-				$(this).hide(); //파일 양식 감춤
-			}else
-			{
-				file = $(this).prop("files")[0];
-				blobURL = window.URL.createObjectURL(file);
-				$(this).parents('.attach-box').find('img').hide();
-				$(this).parents('.attach-box').addClass('video').find('video').show().attr('src', blobURL);
-
-				var vidoeH = $('.photo-list').height();
-				$('.attach-list video').each(function(){
-					$(this).css('height', vidoeH);
-				});
-
 				$(this).hide(); //파일 양식 감춤
 			}
 			$(this).parent('.attach-box').find('.btn-delete').show();
@@ -168,18 +140,12 @@
 			var conWhether = confirm("등록한 파일을 삭제하시겠습니까? ");
 			if (conWhether == true)
 			{
-				if ($.inArray(ext, ['mp4', 'gif', 'png', 'jpg', 'jpeg']))
+				if ($.inArray(ext, ['gif', 'png', 'jpg', 'jpeg']))
 				{
 					$(this).parent('.attach-box').find('img').attr('src', '../img/bg/bg_attach.jpg');
 					$(this).siblings('.inp-file').val('');
 					$(this).hide();
-				}else{
-					$(this).parent('.attach-box').removeClass('video').find('video').hide();
-					$(this).parent('.attach-box').find('img').attr('src', '../img/bg/bg_attach.jpg').show();
-					$(this).siblings('.inp-file').val('');
-					$(this).hide();
 				}
-				resetFormElement($('.attach-box .inp-file')); //전달한 양식 초기화
 				return false; //기본 이벤트 막음
 			}
 		});
