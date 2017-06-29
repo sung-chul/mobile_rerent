@@ -16,8 +16,43 @@ $(window).load(function(){
 	});
 
 	/* 검색결과 출력 */
+	/* 2017-06-29 스크롤 시 리스트 추가 */
 	$('.gray-bg-box .btn-result').click(function(){
-		$('.rentcar-result').show();
+		$('.rentcar-result').show(function(){
+			$(window).scroll(function(){
+				var scrolltop = $(window).scrollTop();
+				var html = '';
+				html+='<div class="thumb-item">';
+				html+='<a href="#" class="link">';
+				html+='<h3 class="thumb-title">쉐보레 올 뉴 크루즈 1.4 터보 LTZ 프리미엄 (*** 5678)</h3>';
+				html+='<div class="thumb-cont">';
+				html+='<div class="img-area"><img src="../img/temp/img_thumb_155x103_02.jpg" alt="자동차 이미지"></div>';
+				html+='<div class="text-area">';
+				html+='<div class="info-text">';
+				html+='<p>2014년 11월</p>';
+				html+='<p>12,571km</p>';
+				html+='<p>디젤+LPG</p>';
+				html+='</div>';
+				html+='<div class="price-text">';
+				html+='<p class="price"><span class="number">28</span>만원</p>';
+				html+='<p class="month">24개월</p>';
+				html+='</div>';
+				html+='<div class="icon-area">';
+				html+='<p class="icon icon-advice">상담중</p>';
+				html+='<p class="icon icon-len">대기 15명</p>';
+				html+='</div>';
+				html+='</div>';
+				html+='</div>';
+				html+='</a>';
+				html+='</div>';
+
+				if( scrolltop == $(document).height() - $(window).height() ){
+					for(i=0; i<5; i++){
+						$(".thumb-list2").append(html);
+					}
+				}
+			});
+		});
 	});
 
 	/* 이미지 슬라이드 */
