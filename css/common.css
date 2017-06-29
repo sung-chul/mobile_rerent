@@ -2037,7 +2037,6 @@ select.styled1:disabled {
 
 /* 검색결과 */
 .rentcar-result {
-	display:none;
 	padding:20px 0 0;
 	background-color:#fff;
 }
@@ -2533,14 +2532,14 @@ select.styled1:disabled {
 .option-lsit .item07:before {background-position: -390px 0;}
 .option-lsit .item08:before {background-position: -455px 0;}
 
-.option-lsit.on .item01:before {background-position: 0 -65px;}
-.option-lsit.on .item02:before {background-position: -65px -65px;}
-.option-lsit.on .item03:before {background-position: -130px -65px;}
-.option-lsit.on .item04:before {background-position: -195px -65px;}
-.option-lsit.on .item05:before {background-position: -260px -65px;}
-.option-lsit.on .item06:before {background-position: -325px -65px;}
-.option-lsit.on .item07:before {background-position: -390px -65px;}
-.option-lsit.on .item08:before {background-position: -455px -65px;}
+.option-lsit .item01.on:before {background-position: 0 -65px;}
+.option-lsit .item02:before {background-position: -65px -65px;}
+.option-lsit .item03.on:before {background-position: -130px -65px;}
+.option-lsit .item04:before {background-position: -195px -65px;}
+.option-lsit .item05.on:before {background-position: -260px -65px;}
+.option-lsit .item06:before {background-position: -325px -65px;}
+.option-lsit .item07.on:before {background-position: -390px -65px;}
+.option-lsit .item08:before {background-position: -455px -65px;}
 
 .option-lsit li span {
 	color:#666;
