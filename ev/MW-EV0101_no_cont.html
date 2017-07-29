@@ -9,26 +9,20 @@
 </head>
 
 <body>
-<div class="wrapper">
+<div class="wrapper bg-gray">
 	<div class="header">
-		<h2 class="page-title">나의 상담내역</h2>
+		<h2 class="page-title">진행중인 이벤트</h2>
 		<button type="button" class="btn-splite btn-prev">이전</button>
 		<button type="button" class="btn-splite btn-search">통합검색</button>
 	</div>
 
 
 	<div class="container">
-		<div class="content wide-cont">
-			<div class="sorting-box">
-				<span class="label-txt">처리상태</span>
-				<select class="styled1">
-					<option>전체</option>
-					<option>전체1</option>
-					<option>전체2</option>
-				</select>
-			</div>
-			<div class="no-cont type4">
-				<p>상담내역이 존재하지 않습니다.</p>
+		<div class="content">
+			<div class="event-area">
+				<div class="no-cont">
+					<p><span>진행중인 이벤트</span>가 없습니다</p>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -55,13 +49,5 @@
 
 <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../js/common.js"></script>
-<script>
-$(window).load(function(){
-	/* 탈퇴사유 - 기타의견 클릭 시 */
-	$('.radio-list2 .etc').click(function(){
-		$('.etc-textarea').focus();
-	});
-});
-</script>
 </body>
 </html>

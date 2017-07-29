@@ -64,3 +64,26 @@ html {background-color:#eaeaea;}
 	padding-bottom:30px;
 	background-color:#fff;
 }
+.event-box .no-event {
+	position:relative;
+	min-height:189px;
+	background:url(../img/bg/bg_no_cont.jpg) 0 0 no-repeat;
+	background-size:100% 100%;
+}
+.event-box .no-event p {
+	position:absolute;
+	top:50%;
+	left:50%;
+	-webkit-transform:translate(-50%, -50%);
+	-ms-transform:translate(-50%, -50%);
+	transform:translate(-50%, -50%);
+	padding-top:39px;
+	background:url(../img/img/logo.png) center 0 no-repeat;
+	background-size:65px 29px;
+	font-size:13px;
+	font-family:'noto';
+	font-weight:400;
+}
+.event-box .no-event p span {
+	font-weight:bold;
+}

@@ -87,13 +87,22 @@
 					</div>
 				</div>
 			</div>
-
+			<!-- 20170726 공지사항이 있을경우 -->
 			<div class="vertical-slide">
 				<div class="swiper-container">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide"><a href="#" class="link"><span class="value">[공지]</span>SK엔카직영몰 ReRent 사이트 오픈 이벤트 진행중</a></div>
 						<div class="swiper-slide"><a href="#" class="link"><span class="value">[공지]</span>SK엔카직영몰 ReRent 사이트 오픈 이벤트 진행중 SK엔카직영몰 ReRent 사이트 오픈 이벤트 진행중</a></div>
 						<div class="swiper-slide"><a href="#" class="link"><span class="value">[공지]</span>SK엔카직영몰 ReRent 사이트 오픈 이벤트 진행중</a></div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- 20170726 공지사항이 없을경우 -->
+			<div class="vertical-slide no-notice">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><a href="#" class="link"><span class="value">[공지]</span>공지사항이 없습니다.</a></div>
 					</div>
 				</div>
 			</div>
@@ -188,7 +197,13 @@
 			<div class="event-box">
 				<h2 class="cTitle03">이벤트</h2>
 				<div class="img-slide">
-					<div class="swiper-container">
+					<!-- 20170726 이벤트가 없을 경우 -->
+					<div class="no-event">
+						<p><span>진행중인 이벤트</span>가 없습니다</p>
+					</div>
+					
+					<!-- 20170726 이벤트가 있을 경우 -->
+					<!--div class="swiper-container">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide"><a href="#" class="link"><img src="img/temp/event_img01.jpg" alt="사진"></a></div>
 							<div class="swiper-slide"><a href="#" class="link"><img src="img/temp/event_img02.jpg" alt="사진"></a></div>
@@ -197,7 +212,7 @@
 						<button type="button" class="btn-prev"></button>
 						<button type="button" class="btn-next"></button>
 						<div class="swiper-pagination styled2"></div>
-					</div>
+					</div-->
 				</div>
 			</div>
 		</div>
@@ -264,12 +279,23 @@
 <script>
 $(window).load(function(){
 	// 알림 슬라이드
+	// 공지사항 있을경우 20170726
 	var swiper = new Swiper('.vertical-slide .swiper-container', {
 		direction: 'vertical',
 		loop: true,
 		noSwipingClass: 'vertical-slide',
 		autoplay: '4000'
 	});
+	
+	// 공지사항 없을 경우 20170726
+	var swiper = new Swiper('.vertical-slide.no-notice .swiper-container', {
+		direction: 'vertical',
+		loop: false,
+		noSwipingClass: 'vertical-slide',
+		autoplay: '4000'
+	});
+
+	var totalSlides = $('.vertical-slide .swiper-slide:not(.swiper-slide-duplicate)').length;
 
 	// 추천상품 소팅
 	$('.tab-item').click(function(){
